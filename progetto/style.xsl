@@ -3,7 +3,7 @@
     
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     
-    <!-- 1. TEMPLATE GENERALE -->
+    <!-- TEMPLATE GENERALE -->
     <xsl:template match="/">
         <html>
             <head>
