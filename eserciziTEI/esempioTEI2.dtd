@@ -1,0 +1,33 @@
+<!-- 
+    Nome: Daria
+    Cognome: Gabbrielli
+    Data: 29/06/2026
+    Nome file: "esempioTEI2.dtd"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: Definire i seguenti elementi: 
+            1. root: TEI
+            2. figli:
+                -	header (obbligatorio, una volta sola)
+                -	facsimile (opzionale, una volta sola)
+                -	testo (obbligatorio, una o più volte; mixed content con possibile elemento <seg>)
+            3. attributi:
+                -	header: type (fixed, CDATA “intestazione”); lang (opzionale, NMTOKEN)
+                -	facsimile: source (obbligatorio); ref(opzionale, IDREFS)
+                -	testo: id (obbligatorio, ID), type (opzionale, contenuto testuale)
+ -->
+
+<!ELEMENT TEI (header, facsimile?, testo+)>
+
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT testo (#PCDATA|seg)*>
+<!ELEMENT seg (#PCDATA)> 
+
+<!ATTLIST header type CDATA #FIXED "intestazione">
+<!ATTLIST header lang NMTOKEN #IMPLIED>
+
+<!ATTLIST facsimile source CDATA #REQUIRED>
+<!ATTLIST facsimile ref IDREFS #IMPLIED>
+
+<!ATTLIST testo id ID #REQUIRED>
+<!ATTLIST testo type CDATA #IMPLIED>

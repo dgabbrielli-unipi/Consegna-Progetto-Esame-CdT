@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- 
+    Nome: Daria
+    Cognome: Gabbrielli
+    Data: 29/07/2026
+    Nome file: "hierarchical-relationship.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    COnsegna: Scrivere e fare il check di un xml non opportunamente annidato.
+-->
+
+<CORPO>
+    <padre>
+
+        <figlio> <!-- l'elemento <figlio> non è opportunamente annidato -->
+
+    </padre>
+
+        </figlio>
+
+</CORPO>
+
+<!--16:	7	The element type "figlio" must be terminated by the matching end-tag "</figlio>".-->

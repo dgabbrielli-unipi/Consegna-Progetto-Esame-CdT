@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- 
+    Nome: Daria
+    Cognome: Gabbrielli
+    Data: 29/07/2026
+    Nome file: "esercizio-CDATA.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: Inserire all'interno di un tag un frammento di codice HTML.
+-->
+
+<corpo>
+
+    <htmlCode>
+        <![CDATA[
+            <h1>Capitolo Primo</h1>
+                <h2>Sezione Seconda</h2>
+        ]]>
+    </htmlCode>
+</corpo>

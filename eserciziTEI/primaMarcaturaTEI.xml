@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xslt"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- 
+     Nome: Daria
+     Cognome: Gabbrielli
+     Data: 29/07/2026
+     Nome file: "primaMarcaturaTEI.xml"
+     Descrizione: questo è un esercizio del corso di Codifica di testi
+     Consegna: Marcare un testo plain text di circa 3000 caratteri a piacere:
+     -	inserire prologo XML
+     -	marcare la struttura usando gli elementi fin qui descritti, in particolare marcare tutti i paragrafi usando <p> e la struttura editoriale usando <div>
+     -	verificare che sia ben formato con xmllint
+     -	salvare il file xml su github.
+-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="it">
+        <fileDesc>
+
+            <titleStmt>
+                <title>Censura in Bitinia</title>
+
+            <respStmt>
+                <resp>Conversione XML TEI a cura di</resp>
+                <persName>
+                    <forename>Daria</forename>
+                    <surname>Gabbrielli</surname>
+                </persName>
+            </respStmt>
+                
+            </titleStmt>
+
+            
+            <extent>ca. 3000 caratteri</extent>
+            
+            <publicationStmt>
+                <authority>Daria Gabbrielli</authority>
+                <pubPlace>Pisa</pubPlace>
+                <date>luglio 2026</date>
+                <availability status="restricted"><p>La lettura del documento è riservata al professore <persName><forename>Angelo</forename> <forename>Mario</forename> <surname>Del Grosso</surname></persName>.</p></availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <analytic>
+                        <author>Levi, Primo</author> 
+                        <title level="a">Censura in Bitinia</title>
+                    </analytic>
+
+                    <monogr>
+                        <author>Levi, Primo</author>
+                        <title level="m" type="main">Storie naturali</title>
+                        <imprint>
+                            <pubPlace>Torino</pubPlace>
+                            <publisher>Einaudi</publisher>
+                            <date>1966</date>
+                        </imprint>
+                        <extent>1 volume</extent>
+                        <biblScope unit="volume">1</biblScope>
+                        <biblScope unit="page" from="16" to="20">184: 16-20</biblScope>
+                    </monogr>
+
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <p>Codifica effettuata seguendo le linee guida della TEI P5. La trascrizione del testo è letterale; nessun intervento sul testo.</p>
+        </encodingDesc>
+        
+        <revisionDesc status="proposed">
+            <list>
+                <item>
+                    <date when="2026-07-29">29 luglio 2026</date>Prima bozza</item>
+                <item>
+                    <date when="2026-07-29">29 luglio 2026</date>Revisione</item>
+            </list>
+        </revisionDesc>
+
+    </teiHeader>
+    
+    <text>
+        <front>
+        </front>
+        <body>
+            <div type="chapter" n="2">
+                <p>Già ho accennato altrove alla pallida vita culturale di questo 
+                paese, tuttora impostata su basi mecenatistiche, ed affidata 
+                all'interessamento di persone facoltose, od anche solo di profes-
+                sionisti ed artisti, specialisti e tecnici, che sono pagati piuttosto 
+                bene.</p>
+                <p>Particolarmente interessante è la soluzione che è stata pro-
+                posta, o per dir meglio che si è spontaneamente imposta, per il 
+                problema della censura. Verso la fine dello scorso decennio il 
+                "bisogno" di censura, per vari motivi, subì in <placeName>Bitinia</placeName> un vivace 
+                incremento; in pochi anni gli uffici centrali esistenti dovettero 
+                raddoppiare gli organici, e quindi stabilire filiali periferiche in 
+                tutti o quasi i capoluoghi di provincia. Si incontravano tuttavia 
+                crescenti difficoltà nel reclutare il personale necessario: in 
+                primo luogo perché il mestiere di censore, come è noto, è diffi-
+                cile e delicato, e quindi comporta una preparazione specifica di 
+                cui mancano spesso anche persone altamente qualificate sotto 
+                altri aspetti; inoltre, perché l'esercizio della censura, a quanto 
+                dimostrano recenti statistiche, non è privo di pericoli.</p>
+                <p>Non voglio qui alludere ai rischi di rappresaglie immediate, 
+                che l'efficiente polizia bitiniese ha ridotto a ben poca cosa. Si 
+                tratta di altro: accurati studi di medicina del lavoro colà svolti 
+                hanno messo in luce una forma specifica di deformazione pro-
+                fessionale, assai molesta ed apparentemente irreversibile, che 
+                dal suo scopritore è stata denominata "distimia parossistica" o 
+                "morbo di <name type="person">Gowelius</name>". Essa si manifesta con un quadro clinico 
+                dapprima vago e mal definito, poi, col passare degli anni, con di-
+                sturbi vari a carico del sensorio (diplopia, turbe dell'olfatto e 
+                dell'udito, reattività eccessiva ad esempio ad alcuni colori o sa
+                pori), e sfocia di regola, dopo remissioni e ricadute, in gravi ano-
+                malie e perversioni psichiche.</p>
+                <p>Come conseguenza, nonostante gli stipendi elevati che veni-
+                vano offerti, il numero dei candidati ai concorsi statali si è an-
+                dato rapidamente assottigliando, ed il carico di lavoro dei fun-
+                zionari di carriera è aumentato in proporzione, fino a raggiun-
+                gere limiti inauditi. Le pratiche inevase (copioni, partiture, ma-
+                noscritti, opere figurative, bozze di manifesti) si accumularono 
+                in tale misura negli uffici censoriali da bloccare letteralmente 
+                non solo gli archivi di fortuna all'uopo predisposti, ma perfino 
+                gli atrii, i corridoi, i locali adibiti ai servizi igienici. Fu registrato 
+                il caso di un caposezione che fu sepolto da un crollo, e morì sof-
+                focato prima che giungessero i soccorsi.</p>
+                <p>Si provvide in un primo tempo con la meccanizzazione. Ogni 
+                sede venne dotata di moderni impianti elettronici: essendo io 
+                profano in materia, non ne potrei descrivere con esattezza il 
+                funzionamento, ma mi è stato detto che la loro memoria magne-
+                tica conteneva tre distinti elenchi di vocaboli, hints, plots, topics 
+                e sagome di riferimento. Quelli del primo elenco, se riscontrati, 
+                venivano automaticamente elisi dall'opera in esame; quelli del 
+                secondo comportavano il rifiuto integrale della medesima; 
+                quelli del terzo, l'immediato arresto ed impiccagione dell'autore 
+                e dell'editore.</p>
+                <p>I risultati furono ottimi per quanto riguarda la mole di lavoro 
+                che poteva essere svolto (in pochi giorni i locali degli uffici fu
+                rono sgomberati), ma assai scadenti sotto l'aspetto qualitativo. 
+                Si ebbero casi di evasioni clamorose: "passò" e fu pubblicato, e 
+                fu venduto con strepitoso successo, il Diario di una capinera di 
+                <name type="person">Claire Efrem</name>, opera di valore letterario dubbio ed apertamente 
+                immorale, la cui autrice, con artifizi assolutamente elementari e 
+                trasparenti, aveva mascherato mediante allusioni e perifrasi 
+                tutti i punti lesivi della morale comune del momento. Si assi
+                stette per contro al doloroso caso <name type="person">Tuttle</name>: il colonnello <name>Tuttle</name>, il
+                lustre critico e storico militare, dovette salire il patibolo perché 
+                in un suo volume sulla campagna del <placeName>Caucaso</placeName> la parola "reggi
+                mento" era comparsa alterata in "reggipento", per un banale re
+                fuso in cui tuttavia il centro di censura meccanizzata di <placeName>Issarvan</placeName> 
+                aveva ravvisato una allusione oscena. Allo stesso tragico destino 
+                sfuggì miracolosamente l'autore di un modesto manuale di alle
+                vamento del bestiame, che ebbe modo di riparare all'estero e di 
+                ricorrere al <orgName>Consiglio di Stato</orgName> prima che la sentenza passasse in 
+                giudicato.</p>
+                <p>A questi tre episodi, che furono resi di pubblica ragione, se ne 
+                devono aggiungere altri numerosissimi di cui corse voce di 
+                bocca in bocca, ma che rimasero ufficialmente ignorati perché 
+                (come ovvio) la loro notizia cadde a sua volta sotto le forbici 
+                della censura. Ne scaturì una situazione di crisi, con diserzione 
+                quasi totale delle forze culturali del paese; situazione che, nono-
+                stante qualche timido tentativo di rottura, permane tuttora.</p>
+                <p>È però di queste ultime settimane una notizia che dà adito a 
+                qualche speranza. Un fisiologo, cui nome viene tenuto segreto, a 
+                conclusione di un suo ampio ciclo di esperienze, ha rivelato in 
+                una discussa relazione alcuni aspetti nuovi della psicologia degli 
+                animali domestici. Questi, se sottoposti ad un particolare condi-
+                zionamento, sarebbero in grado non solo di apprendere facili la-
+                vori di trasporto e di ordinamento, ma anche di eseguire vere e 
+                proprie scelte.</p>
+                <p>Si tratta indubbiamente di un campo vastissimo ed affasci-
+                nante, dalle possibilità praticamente illimitate: in sostanza, da 
+                quanto è stato pubblicato dalla stampa bitiniese fino al mo-
+                mento in cui scrivo, il lavoro censoriale, che nuoce al cervello 
+                umano, e che le macchine sbrigano in modo troppo rigido, po-
+                trebbe essere affidato con profitto ad animali opportunamente 
+                educati. A chi ben guardi, la sconcertante notizia non ha in sé 
+                nulla di assurdo: poiché non si tratta, in ultima analisi, che ap-
+                punto di una scelta.</p>
+                <p>È curioso che, per questo compito, siano stati trovati meno 
+                adatti i mammiferi più vicini all'uomo. Cani, scimmie e cavalli, 
+                sottoposti al processo di condizionamento, si sarebbero dimo-
+                strati cattivi giudici appunto perché troppo intelligenti e sensi-
+                bili: si comportano, secondo l'anonimo studioso, in modo 
+                troppo passionale; reagiscono in modo mal prevedibile a mi-
+                nimi stimoli estranei, peraltro inevitabili in qualsiasi ambiente 
+                di lavoro; mostrano strane preferenze, forse congenite e tuttora 
+                inesplicate, per alcune categorie mentali; la loro stessa memoria 
+                è incontrollabile ed eccessiva; insomma, essi rivelano in queste 
+                circostanze un esprit de finesse che ai fini censoriali è senza dub-
+                bio dannoso.</p>
+                <p>Risultati sorprendenti si sono invece ottenuti dal comune 
+                pollo domestico: tanto che già quattro uffici sperimentali sono 
+                stati notoriamente affidati ad equipes di galline, beninteso sotto 
+                controllo e sorveglianza di funzionari dalla provata esperienza. 
+                Le galline, oltre a tutto facilmente reperibili, e di costo moderato 
+                sia come investimento iniziale, sia come manutenzione, sono ca-
+                paci di scelte rapide e sicure, si attengono scrupolosamente agli 
+                schemi mentali che vengono loro imposti, e, dato il loro carat-
+                tere freddo e tranquillo e la loro memoria evanescente, non 
+                vanno soggette a perturbazioni.</p>
+                <p>È opinione diffusa in questi ambienti che entro pochi anni il 
+                metodo verrà esteso a tutti gli uffici censoriali del paese.</p>
+            </div>
+        </body>
+        <back>
+        </back>
+    </text>
+</TEI>

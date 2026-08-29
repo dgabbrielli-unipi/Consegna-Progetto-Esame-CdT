@@ -1,0 +1,18 @@
+<!-- 
+    Nome: Daria
+    Cognome: Gabbrielli
+    Data: 29/07/2026
+    Nome file: "esempioTEI.dtd"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: Definire i seguenti elementi: 
+            1. Elemento root: TEI
+            2. Elementi figli: 
+            - header (obbligatorio, una occorrenza), 
+            - facsimile (opzionale, una sola occorrenza), 
+            - text (obbligatorio, almeno una occorrenza). 
+            Gli elementi header, facsimile e text hanno tutti un content model testuale. -->
+
+<!ELEMENT TEI (header,facsimile?,text+)>
+<!ELEMENT header (#PCDATA)>
+<!ELEMENT facsimile (#PCDATA)>
+<!ELEMENT text (#PCDATA)>

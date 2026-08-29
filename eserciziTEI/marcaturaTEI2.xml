@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xslt"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<!-- 
+     Nome: Daria
+     Cognome: Gabbrielli
+     Data: 29/07/2026
+     Nome file: "marcaturaTEI2.xml"
+     Descrizione: questo è un esercizio del corso di Codifica di testi
+     Consegna: Utilizzare puntatori, note, lista, glossario, marcare nomi, rs, term.
+-->
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="it">
+        <fileDesc>
+
+            <titleStmt>
+                <title>Il Valore del Silenzio nell'Era del Rumore Perpetuo</title>
+
+            <respStmt>
+                <resp>Conversione XML TEI a cura di</resp>
+                <persName>
+                    <forename>Daria</forename>
+                    <surname>Gabbrielli</surname>
+                </persName>
+            </respStmt>
+                
+            </titleStmt>
+            
+            <publicationStmt>
+                <authority>Daria Gabbrielli</authority>
+                <pubPlace>Pisa</pubPlace>
+                <date>luglio 2026</date>
+                <availability status="restricted"><p>La lettura del documento è riservata al professore <persName><forename>Angelo</forename> <forename>Mario</forename> <surname>Del Grosso</surname></persName>.</p></availability>
+            </publicationStmt>
+            
+            <sourceDesc>
+                <biblStruct>
+                    <p>Born digital</p>
+            </sourceDesc>
+        </fileDesc>
+        
+        <encodingDesc>
+            <p>Codifica effettuata seguendo le linee guida della TEI P5. La trascrizione del testo è letterale; nessun intervento sul testo.</p>
+        </encodingDesc>
+        
+        <revisionDesc status="proposed">
+            <list>
+                <item>
+                    <date when="2026-07-29">29 luglio 2026</date>Prima bozza</item>
+                <item>
+                    <date when="2026-07-29">29 luglio 2026</date>Revisione</item>
+            </list>
+        </revisionDesc>
+
+    </teiHeader>
+    <text>
+        <front>
+        </front>
+        <body>
+            <div type="section" n="1" xml:id="introduzione">
+                <head>Tiramisù</head>
+                <p>Il tiramisù <ptr target="https://www.cucchiaio.it/ricetta/ricetta-tiramisu"/> è il dolce italiano per eccellenza, un capolavoro, tanto semplice da realizzare quanto 
+                goloso, a base di quattro ingredienti <ptr target="#ingredienti"/> principali: mascarpone, uova, savoiardi e caffè. Questo 
+                dessert freddo è una preparazione di grande successo che presenta una notevole serie di 
+                varianti. Questa che vi proponiamo è la versione tradizionale. Di seguito è spiegato il <ref target="#procedimento">procedimento</ref>con qualche <ref target="#consigli">consiglio</ref> e un <ref target="#glossario">glossario</ref></p>
+            </div>
+                
+            <div type="section" n="2" xml:id="ingredienti">
+                <list type="simple">
+                    <head>Ingredienti</head>
+                    <item>400 g di mascarpone</item>
+                    <item>200 g di savoiardi</item>
+                    <item>150 g di zucchero a velo</item>
+                    <item>200 g di cioccolato fondente</item>
+                    <item>4 tuorli</item>
+                    <item>2 albumi</item>
+                    <item>3 tazzine di caffè ristretto</item>
+                    <item>cacao amaro</item>
+                </list>
+            </div>
+                
+            <div type="section" n="3" xml:id="procedimento">
+                <head>Procedimento</head>
+                <p>1. Per preparare il tiramisù, iniziate dalla crema al mascarpone<ptr target="#glossario_cremaMascarpone"/>. 
+                    Dividete i tuorli dagli albumi e, in una terrina, montate questi ultimi 
+                    a neve soda.</p>
+                <p>2. Riunite in un'altra ciotola i tuorli e lo zucchero, 
+                    lavorateli a lungo con una frusta fino a ottenere un composto chiaro e spumoso.</p>
+                <p>3. Incorporate delicatamente a questo composto il mascarpone<ptr target="#glossario_mascarpone"/>.</p>
+                <p>4. Aggiungete al composto gli albumi montati a neve.</p>
+                <p>5. Coprite il fondo di un piatto da portata rettangolare 
+                    a bordi alti con uno strato di savoiardi<ptr target="#glossario_savoiardi"/> e spennellateli accuratamente con il caffè; in 
+                    alternativa, passateli delicatamente nel caffè senza inzupparli troppo prima di disporli nel piatto.</p>
+                <p>6. Ricoprite lo strato di savoiardi con uno strato di crema al 
+                    mascarpone e spolverizzatela con un po’ di cioccolato grattugiato. 
+                    Ripetete la stessa azione  fino a esaurimento degli ingredienti, 
+                    terminado con uno strato di mascarpone spolverizzato di cacao amaro.</p>
+                <p>7. Ripetete la stessa azione fino a esaurimento degli ingredienti, 
+                    terminate con uno strato di mascarpone.</p>
+                <p>8. Spolverizzate il tiramisù con il cacao amaro e ponete il dolce in 
+                    frigorifero per circa tre ore.</p>
+            </div>
+                
+            <div type="section" n="4" xml:id="glossario">
+                <list type="gloss" rend="bulleted">
+                    <head>Piccolo glossario di cucina</head>
+                    <label xml:id="glossario_cremaMascarpone">Crema al mascarpone</label>
+                    <item>Vero e proprio dessert al cucchiaio, usata per farcire dolci o accompagnare biscotti secchi.</item>
+                    <label xml:id="glossario_mascarpone">Mascarpone</label>
+                    <item>Si presenta come una crema morbida di colore bianco o giallo chiaro, 
+                        contraddistinta da una consistenza affine a quella del gelato, con un sapore delicato 
+                        e richiami all'aroma leggermente acido della panna e del latte fresco.</item>
+                    <label>Savoiardi</label>
+                    <item>Biscotti dolci, dalla forma allungata, che prendono il nome dalla casata storica
+                        dei <persName><roleName>Conti di</roleName><placeName>Savoia</placeName></persName>.
+                        <ref target="https://it.wikipedia.org/wiki/Biscotto_savoiardo">Ulteriori informazioni</ref></item>
+                </list>
+            </div>
+        </body>
+        <back>
+        </back>
+    </text>
+</TEI>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- 
+    Nome: Daria
+    Cognome: Gabbrielli
+    Data: 29/07/2026
+    Nome file: "esercizio-validazione-externalDTD.xml"
+    Descrizione: esercizio del corso di Codifica di testi
+    Consegna: 
+            -	Includere all’interno di un documento XML la dichiarazione del tipo, definire internamente gli elementi e gli attributi e validare;
+            -	Inserire nel prologo di un documento XML la dichiarazione del tipo di documento e validare. Creare un file esterno con estensione .dtd prima di includerlo nel prologo XML.
+
+-->
+
+<!-- EXTERNAL DTD:-->
+<!DOCTYPE TEI SYSTEM "./esercizio-validazione-externalDTD.dtd">
+
+<TEI>
+    <padre color="blue">
+        <figlio attribute="blue"></figlio>
+    </padre>
+
+    <elemento type="testo">Questo è un elemento testuale</elemento>
+
+    <elemento>Questo è un altro elemento testuale</elemento>
+
+    <altroPadre id="DariaG">
+        Questo è un elemento misto.
+        <altroFiglio ref="DariaG" attribute="nome">Testo</altroFiglio>
+    </altroPadre>
+
+</TEI>
