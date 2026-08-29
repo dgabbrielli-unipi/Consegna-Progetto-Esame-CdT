@@ -1,0 +1,362 @@
+/* Import dei font */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Rokkitt:wght@400;700&display=swap');
+
+/* Stile base */
+body {
+    font-family: 'Rokkitt', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9e4df;
+    width: 100%;
+    color: #202526; /* Colore del testo principale  */
+}
+
+a {
+	text-decoration: none
+}
+
+/* Menu di navigazione */
+.navbar {
+    padding: 0.75rem;
+    margin: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 2.5rem;
+}
+
+.navbar ul li a {
+    color: #ae7133;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Gloock', serif;
+    font-size: 1.2rem;
+}
+
+#intro {
+    background-color: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 110px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#intro h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#intro h2 {
+    font-size: 1.4rem;
+    font-family: 'Gloock', serif;
+}
+
+#intro p {
+    font-size: 1.2rem;
+}
+
+/* Container principale */
+.container {
+    padding-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+/* Header */
+header {
+    background-color: #202526;
+    position: fixed;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0.2, 0);
+    text-align: center;
+}
+
+header img {
+    max-width: 90%;
+	height: auto;
+    margin-bottom: 1rem;
+    padding: 8px 0 0 25px;
+}
+
+header ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header ul li {
+    margin: 1.5rem 0.3rem;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header ul li:hover {
+	transform: scale(1.1);
+    }
+
+header ul li a {
+    color: #ae7133;
+    text-decoration: none;
+    font-size: 1rem;
+    display: block;
+}
+
+.content {
+	width: 90%
+}
+
+h1 {
+    margin-bottom: 0.5rem;
+    font-family: 'Gloock', serif;
+}
+
+h2 {
+    font-size: 2vw;
+    color: #202526;
+    margin-bottom: 0.5rem;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+/* CLASSI SPECIFICHE PER LA TRASFORMAZIONE */
+
+.facsimile_column {
+    flex: 0 0 40%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.text_column {
+    flex: 0 0 55%;
+    padding: 1rem;
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 4 0 Q 8 4 4 8 Q 0 12 4 16' fill='none' stroke='%23202526' stroke-width='1'/%3E%3C/svg%3E");
+    background-repeat: repeat-y;
+    background-position: center top;
+    background-clip: content-box;
+}
+
+/* Immagini del facsimile */
+.facsimile_image {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Intestazione del testo */
+.intestazione {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intestazione .titolo {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+    margin-top: 0;
+}
+
+.intestazione .sottotitolo {
+    font-size: 1rem;
+    font-family: 'Gloock', serif;
+    color: #202526;
+    margin-top: 0.2rem;
+}
+
+/* Linea ondulata orizzontale per le intestazioni */
+.linea_ondulata {
+    display: inline-block;
+    width: 64px;
+    height: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' width='10' height='10'%3E%3Cpath d='M0 5 Q 2.5 0, 5 5 T 10 5' fill='none' stroke='%23202526' stroke-width='0.8'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+/* Fregio a farfalla per i paragrafi */
+.fregio_farfalla {
+    width: 45px;
+    height: auto;
+    opacity: 0.85;
+    margin: 10px auto;
+    mix-blend-mode: multiply;
+}
+
+/* Bottoni entità nominate */
+.bottoni-entita {
+    margin: 24px 5px;
+    padding-bottom: 15px;
+}
+
+.bottoni-entita button {
+    background-color: transparent;
+    border: 2px solid #ae7133;
+    color: #ae7133;
+    font-family: 'Gloock', serif;
+    font-size: 1.1rem;
+    padding: 5px 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bottoni-entita button:hover {
+    background-color: #ae7133;
+    color: #202526;
+}
+
+/* Transizione fluida quando il colore compare */
+.entita {
+    transition: background-color 0.3s ease;
+    border-radius: 3px;
+}
+
+/* Colore per le Persone */
+.entita.persona.attiva {
+    background-color: #ff7272; 
+}
+
+/* Colore per i Luoghi */
+.entita.luogo.attiva {
+    background-color: #66ee59; 
+}
+
+/* Colore per le Organizzazioni */
+.entita.organizzazione.attiva {
+    background-color: #a182ff; 
+}
+
+/* Gestione paragrafi e allineamenti */
+.p_normale {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.p_rientrato {
+    text-indent: 1.5rem;
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.text_center {
+    text-align: center;
+    display: block;
+}
+
+.text_right {
+    text-align: right;
+    display: block;
+}
+
+/* Firme, chiusure e separatori (fregi) */
+.firma {
+    font-size: 1.3rem;
+    text-align: right;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.separatore {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.fregio-immagine {
+    max-width: 150px;
+    height: auto;
+}
+
+.sectionDivider {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Formattazioni */
+.corsivo {
+    font-style: italic;
+}
+
+.grassetto {
+    font-weight: bold;
+}
+
+.maiuscolo {
+    text-transform: uppercase;
+}
+
+.maiuscoletto {
+    font-variant: small-caps;
+}
+
+/* Note a piè di pagina */
+.note {
+    font-size: 0.9rem;
+    margin-top: 1.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed #ae7133;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0.1rem 0;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    height: 7rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-text {
+    flex: 1;
+    text-align: right;
+    color: #202526;
+    font-size: 0.9rem;
+    padding-right: 20px;
+}
+
+.footer a {
+    color: #202526;
+}

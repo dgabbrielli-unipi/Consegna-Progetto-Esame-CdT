@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader xml:lang="it">
+      <fileDesc>
+
+         <titleStmt>
+            <title>Recensione a P. Fanfani, C. Arlia. Il Lessico della corrotta italianità</title>
+            <respStmt>
+               <resp>Conversione TEI P5 a cura di</resp>
+               <name xml:id="DG">Daria Gabbrielli</name>
+            </respStmt>
+         </titleStmt>
+
+         <editionStmt>
+            <edition n="1">Digital edition - <date when="2026-08">Agosto 2026</date>
+            </edition>
+            <respStmt>
+               <resp>Digital edition project coordinated by</resp>
+               <name xml:id="DS">Daria Spampinato</name>
+               <name xml:id="ADS">Antonio Di Silvestro</name>
+            </respStmt>
+            <respStmt>
+               <resp>Encoding model by</resp>
+               <name ref="#LM">Laura Mazzagufo</name>
+               <name xml:id="AMDG">Angelo Mario Del Grosso</name>
+               <name xml:id="DB">Denise Bruno</name>
+            </respStmt>
+            <funder>NextGenerationEU</funder>
+            <funder>Ministero dell'Università e della Ricerca</funder>
+            <funder>Italia Domani - Piano Nazionale di Ripresa e Resilienza</funder>
+            <funder ref="coverlessListOrganization.xml#CNR">CNR - Consiglio Nazionale delle Ricerche</funder>
+            <funder ref="coverlessListOrganization.xml#UniCT">Università di Catania</funder>
+         </editionStmt>
+
+         <publicationStmt>
+            <authority ref="coverlessListOrganization.xml#ISTC">CNR ISTC - Istituto di Scienze e Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche</authority>
+            <authority ref="coverlessListOrganization.xml#UniCT">Università di Catania</authority>
+            <date when="2026">2026</date>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+            </availability>
+            <idno type="filename">Farfalla_1877_3_11_recensionefanfaniarlia.xml</idno>
+         </publicationStmt>
+         
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <analytic>
+                     <title level="a">Recensione a P. Fanfani, C. Arlia. Il Lessico della corrotta italianità</title>
+                     <author ref="coverlessListPerson.xml#ilBibliofilo">Il Bibliofilo</author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:id="farfalla">La Farfalla</title>
+                     <imprint>
+                        <pubPlace ref="coverlessListPlace.xml#CA">Cagliari</pubPlace>
+                        <date when="1877">1877</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                     <biblScope unit="issue">11</biblScope>
+                     <biblScope unit="page">118-119</biblScope>
+                  </monogr>
+                  
+                  <relatedItem type="reviewOf">
+                     <biblStruct>
+                        <monogr>
+                           <title level="m" ref="coverlessListWork.xml#ilLessicoDellaCorrottaItalianita">Il Lessico della corrotta italianità</title>
+                           <author ref="coverlessListPerson.xml#pietroFanfani">Pietro Fanfani</author>
+                           <author ref="coverlessListPerson.xml#costantinoArlia">Costantino Arlia</author>
+                           <imprint>
+                              <pubPlace ref="coverlessListPlace.xml#MI">Milano</pubPlace>
+                              <publisher ref="coverlessListOrganization.xml#paoloCarrara">Paolo Carrara</publisher>
+                              <date when="1877">1877</date>
+                           </imprint>
+                                    
+                        </monogr>
+                     </biblStruct>
+                  </relatedItem>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>Codifica realizzata per l'esame di Codifica di testi. Corso di laurea triennale in Informatica umanistica dell'Università di Pisa</p>
+         </projectDesc>
+         <editorialDecl>
+            <hyphenation>
+              <p>Si è scelto di rimuovere i trattini di marcatura degli "a capo" in fine riga.</p>
+           </hyphenation>
+            <normalization>
+               <p>Si è scelto di normalizzare gli spazi tra parola e punteggiatura.</p>
+               <p>Si è scelto di mantenere la resa grafica del maiuscolo anche nel testo e di esplicitarne la semantica con l'uso del tag corrispondente.</p> 
+            </normalization>
+            <punctuation>
+               <p>Tutta la punteggiatura nella fonte originale è stata mantenuta e rappresentata usando il carattere corrispondente.</p>
+            </punctuation>
+            <quotation>
+               <p>Tutti i marcatori delle citazioni sono stati mantenuti e inglobati nel contenuto dell'elemento stesso.</p>
+               <p>Si è scelto di usare sempre <tag>quote</tag> per marcare citazioni che l'autore del testo attribuisce a fonti esterne allo stesso; è stato usato <tag>q</tag> per le citazioni implicite.</p>
+            </quotation>
+            <p>Si è scelto di usare lo standard anno-mese-giorno per le date.</p>
+            <interpretation>
+               <p>Si è scelto di creare una tassonomia in <tag>textClass</tag> con i principali temi del Verismo riconosciuti nei testi codificati. All'interno del testo, sono state marcate parole e frasi esemplificative di questi temi, ricondotte alle categorie corrispondenti attraverso l'uso del tag <tag>ref</tag>.</p>
+               <p>Le abbreviazioni sono state sciolte e marcate con il tag <tag>choice</tag> e le due alternative, <tag>abbr</tag> ed <tag>expan</tag>.</p>
+            </interpretation>
+         </editorialDecl>
+      </encodingDesc>
+
+      <profileDesc>
+         <textClass>
+            <keywords>
+               <term type="text" subtype="recensione_italiana">Recensione</term>
+            </keywords>
+            <keywords scheme="#themesTaxonomy">
+               <term type="themes" ref="coverlessTassonomia.xml#lessico_italiano">Lessico italiano</term>
+            </keywords>
+         </textClass>
+         <creation>
+            <placeName ref="coverlessListPlace.xml#MI">Milano</placeName>
+            <date when="1877-05-12">12 Maggio 1877</date>
+         </creation>
+         <langUsage>
+            <language ident="it">Italiano</language>
+            <language ident="it-x-800">Italiano di fine Ottocento</language>
+            <language ident="fr">Francese</language>
+            <language ident="la">Latino</language>
+            <language ident="grc">Greco antico</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change status="draft" when="2026-08-22" resp="#DG">Prima bozza 22 agosto 2026</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <facsimile>
+      
+      <surface xml:id="pag.118">
+         <graphic url='Farfalla_1877_3_11_118.tif' width='3425.4px' height='4972.4px' />
+         <!-- Colonna 1 pag 118 -->
+         <zone ulx="408" uly="3843" lrx="1723" lry="4637" xml:id="zone_col_1-p.118"/>
+         <!-- Intestazione pag 118 -->
+         <zone ulx="459" uly="3843" lrx="1685" lry="4383" xml:id="zone_intestazione_p.118"/>
+         <!-- Paragrafo 1 colonna 1 pag 118 -->
+         <zone ulx="440" uly="4414" lrx="1739" lry="4631" xml:id="zone_p_1-col_1-p.118"/>
+         
+         <!-- Colonna 2 pag 118 -->
+         <zone ulx="1859" uly="576" lrx="3161" lry="4667" xml:id="zone_col_2-p.118"/>
+         <!-- Paragrafo 2 colonna 2 pag 118 -->
+         <zone ulx="1948" uly="582" lrx="2388" lry="668" xml:id="zone_p_2-col_2-p.118"/>
+         <!-- Paragrafo 3 colonna 2 pag 118 -->
+         <zone ulx="1954" uly="678" lrx="2046" lry="731" xml:id="zone_p_3-col_2-p.118"/>
+         <!-- Paragrafo 4 colonna 2 pag 118 -->
+         <zone ulx="1956" uly="751" lrx="2319" lry="814" xml:id="zone_p_4-col_2-p.118"/>
+         <!-- Paragrafo 5 colonna 2 pag 118 -->
+         <zone ulx="1958" uly="824" lrx="2252" lry="885" xml:id="zone_p_5-col_2-p.118"/>
+         <!-- Paragrafo 6 colonna 2 pag 118 -->
+         <zone ulx="1959" uly="903" lrx="2225" lry="965" xml:id="zone_p_6-col_2-p.118"/>
+         <!-- Paragrafo 7 colonna 2 pag 118 -->
+         <zone ulx="1877" uly="976" lrx="3184" lry="1475" xml:id="zone_p_7-col_2-p.118"/>
+         <!-- Paragrafo 8 colonna 2 pag 118 -->
+         <zone ulx="1878" uly="1498" lrx="3164" lry="2082" xml:id="zone_p_8-col_2-p.118"/>
+         <!-- Paragrafo 9 colonna 2 pag 118 -->
+         <zone ulx="1889" uly="2092" lrx="3163" lry="2174" xml:id="zone_p_9-col_2-p.118"/>
+         <!-- Paragrafo 10 colonna 2 pag 118 -->
+         <zone ulx="1866" uly="2178" lrx="3153" lry="2608" xml:id="zone_p_10-col_2-p.118"/>
+         <!-- Paragrafo 11 colonna 2 pag 118 -->
+         <zone ulx="1858" uly="2623" lrx="3147" lry="3593" xml:id="zone_p_11-col_2-p.118"/>
+         <!-- Paragrafo 12 colonna 2 pag 118 -->
+         <zone ulx="1856" uly="3613" lrx="3139" lry="4116" xml:id="zone_p_12-col_2-p.118"/>
+         <!-- Paragrafo 13 colonna 2 pag 118 -->
+         <zone ulx="1849" uly="4131" lrx="3131" lry="4642" xml:id="zone_p_13-col_2-p.118"/>
+      </surface>
+      
+      <surface>
+         <graphic url='Farfalla_1877_3_11_119.tif' width='3350.4px' height='4952.4px' />
+         <!-- Colonna 1 pag 119 -->
+         <zone ulx="231" uly="623" lrx="1622" lry="4595" xml:id="zone_col_1-p.119"/>
+         <!-- Paragrafo 13 colonna 1 pag 119 -->
+         <zone ulx="217" uly="610" lrx="1503" lry="854" xml:id="zone_p_13-col_1-p.119"/>
+         <!-- Paragrafo 14 colonna 1 pag 119 -->
+         <zone ulx="235" uly="841" lrx="1513" lry="1230" xml:id="zone_p_14-col_1-p.119"/>
+         <!-- Paragrafo 15 colonna 1 pag 119 -->
+         <zone ulx="246" uly="1208" lrx="1528" lry="1663" xml:id="zone_p_15-col_1-p.119"/>
+         <!-- Paragrafo 16 colonna 1 pag 119 -->
+         <zone ulx="269" uly="1651" lrx="1534" lry="2169" xml:id="zone_p_16-col_1-p.119"/>
+         <!-- Paragrafo 17 colonna 1 pag 119 -->
+         <zone ulx="263" uly="2157" lrx="1539" lry="2313" xml:id="zone_p_17-col_1-p.119"/>
+         <!-- Paragrafo 18 colonna 1 pag 119 -->
+         <zone ulx="270" uly="2302" lrx="1544" lry="2526" xml:id="zone_p_18-col_1-p.119"/>
+         <!-- Paragrafo 19 colonna 1 pag 119 -->
+         <zone ulx="282" uly="2524" lrx="1548" lry="2830" xml:id="zone_p_19-col_1-p.119"/>
+         <!-- Paragrafo 20 colonna 1 pag 119 -->
+         <zone ulx="280" uly="2814" lrx="1553" lry="3278" xml:id="zone_p_20-col_1-p.119"/>
+         <!-- Paragrafo 21 colonna 1 pag 119 -->
+         <zone ulx="295" uly="3274" lrx="1559" lry="3567" xml:id="zone_p_21-col_1-p.119"/>
+         <!-- Paragrafo 22 colonna 1 pag 119 -->
+         <zone ulx="303" uly="3562" lrx="1564" lry="3785" xml:id="zone_p_22-col_1-p.119"/>
+         <!-- Paragrafo 23 parte 1 colonna 1 pag 119 -->
+         <zone ulx="300" uly="3775" lrx="1563" lry="4002" xml:id="zone_p_23-n_1-col_1-p.119"/>
+         <!-- Citazione colonna 1 pag 119 -->
+         <zone ulx="547" uly="4000" lrx="1339" lry="4082" xml:id="zone_q-col_1-p.119"/>
+         <!-- Paragrafo 23 parte 2 colonna 1 pag 119 -->
+         <zone ulx="303" uly="4089" lrx="1588" lry="4589" xml:id="zone_p_23-n_2-col_1-p.119"/>
+         
+         <!-- Colonna 2 pag 119 -->
+         <zone ulx="1638" uly="590" lrx="3043" lry="2501" xml:id="zone_col_2-p.119"/>
+         <!-- Paragrafo 24 colonna 2 pag 119 -->
+         <zone ulx="1652" uly="595" lrx="2960" lry="1309" xml:id="zone_p_24-col_2-p.119"/>
+         <!-- Paragrafo 25 colonna 2 pag 119 -->
+         <zone ulx="1669" uly="1319" lrx="2943" lry="1619" xml:id="zone_p_25-col_2-p.119"/>
+         <!-- Paragrafo 26 colonna 2 pag 119 -->
+         <zone ulx="1682" uly="1615" lrx="2952" lry="2126" xml:id="zone_p_26-col_2-p.119"/>
+         <!-- Paragrafo 27 colonna 2 pag 119 -->
+         <zone ulx="1688" uly="2112" lrx="2971" lry="2279" xml:id="zone_p_27-col_2-p.119"/>
+
+         <!-- Firma dell'autore -->
+         <zone ulx="2374" uly="2333" lrx="2830" lry="2411" xml:id="zone_sign"/>
+      </surface>
+   </facsimile>
+   
+   <text>
+      <body>
+         <pb n="118" xml:id="Farfalla_1877_3_11_118" facs="Farfalla_1877_3_11_118.tif"/>
+         <cb n="1" xml:id="col_1-p.118" facs="#zone_col_1-p.118"/>
+
+         <div type="intestazione" facs="#zone_intestazione_p.118">
+            <head type="main">P. Fanfani e C. Arlìa</head>
+            <metamark function="sectionDivider" rend="ondulata">-</metamark>
+            <head type="subtitle"><title ref="coverlessListWork.xml#ilLessicoDellaCorrottaItalianita">IL LESSICO DELLA CORROTTA ITALIANITÀ</title></head>
+            <metamark function="sectionDivider" rend="ondulata">-</metamark>
+            <head type="subtitle"><placeName type="real" ref="coverlessListPlace.xml#MI">Milano</placeName>. <orgName type="publisher" ref="coverlessListOrganization.xml#paoloCarrara">PAOLO CARRARA</orgName>. <date when="1877">1877</date>. <choice><abbr>L<am>.</am></abbr><expan resp="#DG">L<ex>ire</ex></expan></choice> 5.</head>
+            <metamark function="sectionDivider" rend="ondulata">-</metamark>
+
+         </div>
+         
+         <div type="text">
+            <p rend="first-line-indented" xml:id="p_1" facs="#zone_p_1-col_1-p.118">Parolai, linguaiuoli, puristi, vocabolaristi, cruscan
+            ti... E se vuolsi una rima, una rima che non faccia 
+            una grinza, eccola: — <term type="stile" subtype="lessico">Pedanti</term>!</p>
+            
+            <cb n="2" xml:id="col_2-p.118" facs="#zone_col_2-p.118"/>
+            
+            <p rend="first-line-indented" xml:id="p_2" facs="#zone_p_2-col_2-p.118">Chi dice questo?</p>
+            <p rend="first-line-indented" xml:id="p_3" facs="#zone_p_3-col_2-p.118"><rs type="person" subtype="real" ref="coverlessListPerson.xml#ilBibliofilo">Io</rs>.</p>
+            <p rend="first-line-indented" xml:id="p_4" facs="#zone_p_4-col_2-p.118">Chi lo pensa?</p>
+            <p rend="first-line-indented" xml:id="p_5" facs="#zone_p_5-col_2-p.118">Tutt' <placeName type="real" ref="coverlessListPlace.xml#IT">Italia</placeName></p>
+            <p rend="first-line-indented" xml:id="p_6" facs="#zone_p_6-col_2-p.118">O perchè?</p>
+            
+            <p rend="first-line-indented" xml:id="p_7" facs="#zone_p_7-col_2-p.118">Perchè tutto quello che pute di <persName type="real" ref="coverlessListPerson.xml#adolfoBartoli">Bartoli</persName> o di <persName type="real" ref="coverlessListPerson.xml#antonioCesari">Ce
+            sari</persName>, di <persName type="real" ref="coverlessListPerson.xml#annibaleCaro">Caro</persName> o di <persName type="real" ref="coverlessListPerson.xml#lodovicoCastelvetro">Castelvetro</persName>, di <persName type="real" ref="coverlessListPerson.xml#benedettoVarchi">Varchi</persName> o di <persName type="real" ref="coverlessListPerson.xml#salvatoreCorticelli">Corti
+            celli</persName>, di <persName type="real" ref="coverlessListPerson.xml#prosperoViani">Viani</persName> o di <persName type="real" ref="coverlessListPerson.xml#benedettoVarchi">Varchi</persName> di <persName type="real" ref="coverlessListPerson.xml#salvatoreCorticelli">Corticelli</persName> o di <persName type="real" ref="coverlessListPerson.xml#giuseppeValeriani">Valeriani</persName>, di 
+            <persName type="real" ref="coverlessListPerson.xml#alfonsoCerquetti">Cerquetti</persName> o di <persName type="real" ref="coverlessListPerson.xml#antonioDeNino">De-Nino</persName>, che volete? oramai non ci 
+            son più nari italiane che lo possan soffrire, per quanto 
+            le si vogliano suppor foderate, corazzate, tasate e 
+            magari otturate <foreign xml:lang="la" rend="italic">secundum Hermetem!</foreign></p>
+            
+            <p rend="first-line-indented" xml:id="p_8" facs="#zone_p_8-col_2-p.118">No, non v'ha esempio, nel mondo, di un popolo 
+            come il nostro, il quale della propria lingua sia riu
+            scito a fare una specie d'orto concluso, di terra di 
+            <placeName type="real" ref="coverlessListPlace.xml#Canaan">Canaan</placeName>, di <rs type="place" subtype="real" ref="coverlessListPlace.xml#Antartide"></rs>regione polare, di <placeName type="real" ref="coverlessListPlace.xml#AustraliaCentrale">Australia centrale</placeName>, quanto 
+            insomma vi potete immaginare di più fantasticamente 
+            ripulsivo ed uggioso, di più insopportabilmente runico, 
+            babelico e geroglifico, di più grottescamente contrad
+            ditorio e contraddetto.</p>
+            
+            <p rend="first-line-indented" xml:id="p_9" facs="#zone_p_9-col_2-p.118">E ancora... <foreign xml:lang="la" rend="italic">Habemus pontificem</foreign>: — la <orgName type="academy" ref="coverlessListOrganization.xml#accademiaDellaCrusca">Crusca</orgName>!</p>
+            <p rend="first-line-indented" xml:id="p_10" facs="#zone_p_10-col_2-p.118">O <foreign xml:lang="la">Domine</foreign>, che cosa dunque ti abbiamo fatto, che 
+            ci hai condannati a scrivere ed a parlare jeri come 
+            volea <persName type="real" ref="coverlessListPerson.xml#cieloDAlcamo">Ciullo d'Alcamo</persName>, oggi come vuol <persName type="real" ref="coverlessListPerson.xml#guittoneDArezzo">fra Guittone</persName>, 
+            domani come vorrà il deputato <persName type="real" ref="coverlessListPerson.xml#ferdinandoPetruccelliDellaGattina">Petruccelli</persName>, e posdo
+            mani come vorrà il senatore <persName type="real" ref="coverlessListPerson.xml#giovanniSiottoPintor">Siotto-Pintor</persName> — egre
+            gio uomo, che scrive <term type="stile" subtype="lessico" rend="italic">comuncocchio</term> per <foreign xml:lang="la" rend="italic">omnibus</foreign>?....</p>
+            
+            <p rend="first-line-indented" xml:id="p_11" facs="#zone_p_11-col_2-p.118">Che dizionario aprire? Che grammatica scarta
+            bellare, gran Dio? La teorica de' verbi — quella buo
+            na, quella autentica — sarà la teorica del <persName type="real" ref="coverlessListPerson.xml#marcoMastrofini">Mastrofini</persName> 
+            o quella di <persName type="real" ref="coverlessListPerson.xml#luigiAmedeoBianchi">Luigi Amedeo</persName>? L'<hi rend="italic">j</hi> è poi davvero una 
+            consonante, come giurò il <persName type="real" ref="coverlessListPerson.xml#giovanniGherardini">Gherardini</persName> pria del <persName type="real" ref="coverlessListPerson.xml#pietroFanfani">Fan
+            fani</persName>, o non è che una lettera esotica, un intruso qua
+            lunque, come il <hi rend="italic">w</hi> ed il <hi rend="italic">k</hi>? Non è permesso che a <persName type="real" ref="coverlessListPerson.xml#danteAlighieri">Dante</persName> 
+            di parlare <term type="stile" subtype="lessico" rend="italic">francioso</term>? È proprio toscano il monopo
+            lio de' solecismi? Dobbiamo pronunziare <term type="stile" subtype="lingua" rend="italic">havallo</term> col
+            l'asma, o <term type="stile" subtype="lingua" rend="italic">parterrè</term> senza l'e muta? L'<hi rend="italic">x</hi> bisogna dav
+            vero chiamarla <term type="stile" subtype="lingua" rend="italic">iccase</term>? <persName type="real" ref="coverlessListPerson.xml#giuseppeGiusti">Giuseppe Giusti</persName>, che dimanda: 
+            <q rend="italic">Cos'era <persName type="real" ref="coverlessListPerson.xml#gianDomenicoRomagnosi">Romagnosi</persName>?</q> si lascia o non si lascia scap
+            pare due spropositi in tre parole?</p>
+            
+            <p rend="first-line-indented" xml:id="p_12" facs="#zone_p_12-col_2-p.118">O signor <persName type="real" ref="coverlessListPerson.xml#pietroFanfani">Fanfani</persName> mio caro, che la vuol proprio 
+            sapere una coserellina? A parte le interrogazioni 
+            che ho scaraventate dianzi, il suo <title ref="coverlessListWork.xml#ilLessicoDellaCorrottaItalianita" rend="italic">Lessico</title> sa ella 
+            quale impressione mi fece? Questa: — che dei due 
+            compilatori l'uno, od entrambi, lo debbono avere <distinct type="dialetto">ab
+            borracciato</distinct>, altro che a <distinct type="dialetto">battiscarpa</distinct>, senza rileggerlo, 
+            addirittura...</p>
+            
+            <p rend="first-line-indented" xml:id="p_13" facs="#zone_p_13-col_2-p.118 #zone_p_13-col_1-p.119">Non le vo' mettere in conto le <distinct type="gergo">papere</distinct> tipografiche, 
+            ma le giuro che le sono di molte. E non esagererei 
+            tanto cosi, vede, quando notassi che su cento cita
+            zioni di parole francesi (o <term type="stile" subtype="lessico" rend="italic">francesche</term>, faccia pure il 
+            suo comodo!) centodue sono storpiate per forma da 
+            far ridere i <term type="stile" subtype="lessico">gallinacci</term>, altro che i Galli... — L'<foreign xml:lang="fr" rend="italic">ensuite 
+            a demain</foreign>, l'<foreign xml:lang="fr">ecrassante</foreign>, <choice><abbr>v<am>.</am> g<am>.</am></abbr><expan resp="#DG">v<ex>erbi</ex> g<ex>ratia</ex></expan></choice>, non dirò che sieno là
+               
+            <pb n="119" xml:id="Farfalla_1877_3_11_119" facs="Farfalla_1877_3_11_119.tif"/>
+            <cb n="1" xml:id="col_1-p.119" facs="#zone_col_1-p.119"/>
+               
+            per renderne imperitura testimonianza, chè il <choice><abbr>sig<am>.</am></abbr><expan resp="#DG">sig<ex>nor</ex></expan></choice> 
+            <persName type="real" ref="coverlessListPerson.xml#pietroFanfani">Fanfani</persName> sarebbe lesto a scagliare addosso al mio gal
+            licismo la scomunica... <hi rend="italic">co' ceri gialli</hi>: e dico poco!...</p>
+            
+            <p rend="first-line-indented" xml:id="p_14" facs="#zone_p_14-col_1-p.119">Dirò, piuttosto, che le <foreign xml:lang="fr" rend="italic">coquilles</foreign> non fan mostra 
+            meno bella nel testo italiano ed oltre alle <foreign xml:lang="fr" rend="italic">coquilles</foreign> 
+            materiali — ciò ch'è più grave — parecchie mi 
+            toccò di pescarne in codesto <title ref="coverlessListWork.xml#ilLessicoDellaCorrottaItalianita">Lessico</title>, le quali mi pa
+            jono bell'e bene... <hi rend="italic">spirituali.</hi></p>
+            
+            <p rend="first-line-indented" xml:id="p_15" facs="#zone_p_15-col_1-p.119"><term type="stile" subtype="lessico" rend="italic">Parimenti</term> per parimente, <term type="stile" subtype="lessico" rend="italic">sì</term> o <term type="stile" subtype="lessico" rend="italic">tanto</term> in relazione 
+            al <term type="stile" subtype="lessico" rend="italic">che</term> anzichè al <term type="stile" subtype="lessico" rend="italic">come</term>, sono errori; e sapevamcelo. 
+            O perchè la vi casca sempre, lei <choice><abbr>sig<am>.</am></abbr><expan resp="#DG">sig<ex>nor</ex></expan></choice> <persName type="real" ref="coverlessListPerson.xml#pietroFanfani">Fanfani</persName>, che pre
+            dica pure sì bene? — Che più? Perfino sul frontispizio 
+            del suo <title ref="coverlessListWork.xml#ilLessicoDellaCorrottaItalianita">Lessico</title> veggo lo scomunicato <term type="stile" subtype="lessico" rend="italic">per</term>, che se
+            condo lei è il <foreign xml:lang="fr" rend="italic">par</foreign> de' Francesi!</p>
+            
+            <p rend="first-line-indented" xml:id="p_16" facs="#zone_p_16-col_1-p.119">La sua proposta del <term type="stile" subtype="lessico" rend="italic">quietanzare</term>, oltre che viola 
+            apertamente le leggi della etimologia, non pare a 
+            lei, <name type="epithet" subtype="real" ref="coverlessListPerson.xml#pietroFanfani">cavaliere garbatissimo</name>, una contraddizione pal
+            mare alla famosa teorica del <hi rend="italic">Dittongo mobile</hi>, la qua
+            le — a voler esser giusti — non è poi altro che la 
+            teorica esposta negli <title ref="coverlessListWork.xml#avvertimentiLessigrafici" rend="italic">Avvertimenti lessigrafici</title> dal 
+            benerito <persName type="real" ref="coverlessListPerson.xml#giovanniGherardini">Gherardini</persName>?</p>
+            
+            <p rend="first-line-indented" xml:id="p_17" facs="#zone_p_17-col_1-p.119">Il suo tema <term type="stile" subtype="lessico" rend="italic">Sapere</term> — la lo riscontri, veh! non 
+            ha proprio nè senso, nè rima, nè coda.</p>
+            
+            <p rend="first-line-indented" xml:id="p_18" facs="#zone_p_18-col_1-p.119">Al tema <term type="stile" subtype="lessico" rend="italic">Stato</term>, uno scolaretto potrà dire del les
+            sicografo: — <q>Bastava un <term type="stile" subtype="lessico" rend="italic">anche</term> solo, ed un <term type="stile" subtype="lessico" rend="italic">le</term> sarebbe 
+            <term type="stile" subtype="lessico" rend="italic">stato</term> di molto meglio!</q></p>
+            
+            <p rend="first-line-indented" xml:id="p_19" facs="#zone_p_19-col_1-p.119">Ella mi rimanda a <term type="stile" subtype="lessico" rend="italic">Brano</term>, e di catti s'io trovo 
+            <term type="stile" subtype="lessico" rend="italic">Squarcio.</term> Ella mi rimanda a <term type="stile" subtype="lessico" rend="italic">Deplorare</term>, ma ahimè! 
+            non potrei che <term type="stile" subtype="lessico" rend="italic">deplorarne</term> l'assoluta mancanza nel 
+            <title ref="coverlessListWork.xml#ilLessicoDellaCorrottaItalianita">Lessico</title>!</p>
+            
+            <p rend="first-line-indented" xml:id="p_20" facs="#zone_p_20-col_1-p.119"><term type="stile" subtype="lessico" rend="italic">Pescecane</term>, <term type="stile" subtype="lessico" rend="italic">pescespada</term>, son voci composte che si 
+            comprendono, perchè italiane: ma <term type="stile" subtype="lessico" rend="italic">stoccofisso</term>, cresi
+            mato da lei, è un ridicolo <term type="stile" subtype="lessico">germanismo</term>, in analogia 
+            al quale, ognuno di noi che sappia un po' di tede
+            sco, potrà benissimo usare <term type="stile" subtype="lessico" rend="italic">federmèssero</term> per <hi rend="italic">tempe
+            rino!</hi>...</p>
+            
+            <p rend="first-line-indented" xml:id="p_21" facs="#zone_p_21-col_1-p.119"><term type="stile" subtype="lessico" rend="italic">Semplicizzare!</term>... Ma e con quali orecchi prefe
+            rirlo allo schietto <term type="stile" subtype="lessico" rend="italic">semplificare</term>, formato ad immagine 
+            e somiglianza dell'<term type="stile" subtype="lessico" rend="italic">amplificare</term> — che secondo lei (<choice><abbr>V<am>.</am></abbr><expan>V<ex>edi</ex></expan></choice> 
+            <hi rend="italic">Solidificare</hi>) dovrebb'essere <term type="stile" subtype="lessico" rend="italic">amplifare?</term>!...</p>
+            
+            <p rend="first-line-indented" xml:id="p_22" facs="#zone_p_22-col_1-p.119">Temo che al tema <term type="stile" subtype="lessico" rend="italic">Stomatico</term> la <choice><abbr>S<am>.</am> V<am>.</am></abbr><expan resp="#DG">S<ex>ignoria</ex> V<ex>ostra</ex></expan></choice> abbia preso 
+            una cantonata. Il signor <persName type="real" ref="coverlessListPerson.xml#marcantonioParenti">Parenti</persName> è forte nel greco: 
+            e altro è <foreign xml:lang="grc" rend="italic">stoma</foreign>, <foreign xml:lang="grc" rend="italic">atos</foreign>, altro <foreign xml:lang="la" rend="italic">stomachus, i</foreign>.</p>
+            
+            <p rend="first-line-indented" xml:id="p_23" facs="#zone_p_23-n_1-col_1-p.119 #zone_p_23-n_2-col_1-p.119">Il tema <term type="stile" subtype="lessico" rend="italic">Saltimanco</term> [e molti, anzi troppi altri] la
+            sciando stare che non dicono nulla, appajono fabbri
+            cati unicamente per versarvi
+            
+            <q rend="align-center" facs="#zone_q-col_1-p.119">«... <distinct rend="italic">del flatüoso èpate il fiele</distinct>»</q>
+            
+            contro quel buon prete del <persName type="real" ref="coverlessListPerson.xml#giuseppeTigri">Tigri</persName>, che si sarà lasciati 
+            sfuggire tutti i <distinct>scerpellon</distinct> ch'ella vuole, ma... ei non si 
+            vive mica più ai tempi del <persName type="real" ref="coverlessListPerson.xml#lucardesi">Lucardesi</persName> o di <persName type="real" ref="coverlessListPerson.xml#appianoBuonafede">Appiano Bona
+            fede</persName> che diamine!... E s'ella sapesse, <choice><abbr>sig<am>.</am></abbr><expan resp="#DG">sig<ex>nor</ex></expan></choice> <persName type="real" ref="coverlessListPerson.xml#pietroFanfani">Fanfani</persName> quanto 
+            diè sui nervi al prossimo anche il biliosissimo <persName type="real" ref="coverlessListPerson.xml#niccoloTommaseo">Tom
+            masèo</persName> colle sue allusioni e colle sue tirate continue, 
+            che pigliano mezzo lessico da se sole!</p>
+            
+            <cb n="2" xml:id="col_2-p.119" facs="#zone_col_2-p.119"/>
+            
+            <p rend="first-line-indented" xml:id="p_24" facs="#zone_p_24-col_2-p.119">Al § III del tema <term type="stile" subtype="lessico" rend="italic">Si</term>, par ch'ella non faccia buon 
+            viso all'elegantissimo e popolarissimo <term type="stile" subtype="lessico" rend="italic">Noi si fa</term>, <term type="stile" subtype="lessico" rend="italic">noi ci 
+            si</term>, <choice><abbr>ecc<am>.</am></abbr><expan resp="#DG">ecc<ex>etera</ex></expan></choice> Bene: rilegga sulla particella <term type="stile" subtype="lessico" rend="italic">si</term> la magnifi
+            ca dissertazione del conte <persName type="real" ref="coverlessListPerson.xml#giovanniGalvani">Galvani</persName>, se non erro, nel
+            l'<orgName type="journal" ref="coverlessListOrganization.xml#ArchivioStoricoItaliano">Archivio storico italiano</orgName>; e quando l'avrà ponde
+            rata un pochino, la mi sappia dire se la locuzione 
+            di cui trattasi non sia proprio quel che dio fece per 
+            evitare agl'Italiani un monte di <term type="stile" subtype="lessico">francesismi</term> nella 
+            traduzione delle frasi comincianti coll'<foreign xml:lang="fr" rend="italic">On nous</foreign> o col
+            l'<foreign xml:lang="fr" rend="italic">On se</foreign>.....</p>
+            
+            <p rend="first-line-indented" xml:id="p_25" facs="#zone_p_25-col_2-p.119"><term type="stile" subtype="lessico" rend="italic">Serio, sentimentale</term>, all'indice! Ma allora come farà 
+            <choice><abbr>S<am>.</am> V<am>.</am></abbr><expan resp="#DG">S<ex>ignoria</ex> V<ex>ostra</ex></expan></choice> a dire, per <choice><abbr>es<am>.</am></abbr><expan resp="#DG">es<ex>empio</ex></expan></choice>, che <persName type="real" ref="coverlessListPerson.xml#ugoFoscolo">Ugo Foscolo</persName> tradusse stu
+            pendamente il <title ref="coverlessListWork.xml#ViaggioSentimentale" rend="italic">Viaggio Sentimentale</title> di <persName type="real" ref="coverlessListPerson.xml#laurenceSterne">Sterne</persName>? Ah, 
+            vorrà essere un affar serio!</p>
+            
+            <p rend="first-line-indented" xml:id="p_26" facs="#zone_p_26-col_2-p.119">Ed ora, <name type="epithet" subtype="real" ref="coverlessListPerson.xml#pietroFanfani">egregio cavalier mio</name>, le vorrei dare una... 
+            una... come ho a dire? <term type="stile" subtype="lessico" rend="italic">Una stretta di mano!</term> Ma 
+            neppur questo non è italianità <term type="stile" subtype="lessico" rend="italic">incorrotta</term>; ond'io che 
+            le mani non <term type="stile" subtype="lessico" rend="italic">bacio</term> mai a nessuno (come pare faces
+            sero que' buoni ma servilissimi nostri vecchi) mi 
+            starò pago a salutarla con affetto e con ossequio, 
+            ripetendole però, sul tono dell'<q rend="italic">Eppur si muove</q>:</p>
+            
+            <p rend="first-line-indented" xml:id="p_27" facs="#zone_p_27-col_2-p.119">Da lei, con o senza il <choice><abbr>sig<am>.</am></abbr><expan resp="#DG">sig<ex>nor</ex></expan></choice> <persName type="real" ref="coverlessListPerson.xml#costantinoArlia">Arlia</persName>, un lessico simile 
+            poteva essere fatto di molto meglio!</p>
+            
+         </div>
+         <div type="closer">
+            <signed facs="#zone_sign">
+               <persName type="real" ref="coverlessListPerson.xml#ilBibliofilo" rend="bold">Il Bibliofilo</persName>
+            </signed>
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="it">
+      <fileDesc>
+
+         <titleStmt>
+            <title>In giro per l'Italia. All'esposizione di Napoli</title>
+            <respStmt>
+               <resp>Conversione TEI P5 a cura di</resp>
+               <name xml:id="DG">Daria Gabbrielli</name>
+            </respStmt>
+         </titleStmt>
+
+         <editionStmt>
+            <edition n="1">Digital edition - <date when="2026-08">Agosto 2026</date>
+            </edition>
+            <respStmt>
+               <resp>Digital edition project coordinated by</resp>
+               <name xml:id="DS">Daria Spampinato</name>
+               <name xml:id="ADS">Antonio Di Silvestro</name>
+            </respStmt>
+            <respStmt>
+               <resp>Encoding model by</resp>
+               <name ref="#LM">Laura Mazzagufo</name>
+               <name xml:id="AMDG">Angelo Mario Del Grosso</name>
+               <name xml:id="DB">Denise Bruno</name>
+            </respStmt>
+            <funder>NextGenerationEU</funder>
+            <funder>Ministero dell'Università e della Ricerca</funder>
+            <funder>Italia Domani - Piano Nazionale di Ripresa e Resilienza</funder>
+            <funder ref="coverlessListOrganization.xml#CNR">CNR - Consiglio Nazionale delle Ricerche</funder>
+            <funder ref="coverlessListOrganization.xml#UniCT">Università di Catania</funder>
+         </editionStmt>
+
+         <publicationStmt>
+            <authority ref="coverlessListOrganization.xml#ISTC">CNR ISTC - Istituto di Scienze e Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche</authority>
+            <authority ref="coverlessListOrganization.xml#UniCT">Università di Catania</authority>
+            <date when="2026">2026</date>
+            <availability status="free">
+               <licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</licence>
+            </availability>
+            <idno type="filename">Farfalla_1877_3_10_ingiroperlitalia.xml</idno>
+         </publicationStmt>
+         
+         <sourceDesc>
+            <listBibl>
+               <biblStruct>
+                  <analytic>
+                     <title level="a">In giro per l'Italia. All'esposizione di Napoli</title>
+                     <author ref="coverlessListPerson.xml#ilMilanese">Il Milanese</author>
+                  </analytic>
+                  <monogr>
+                     <title level="j" xml:id="farfalla">La Farfalla</title>
+                     <imprint>
+                        <pubPlace ref="coverlessListPlace.xml#CA">Cagliari</pubPlace>
+                        <date when="1877">1877</date>
+                     </imprint>
+                     <biblScope unit="volume">3</biblScope>
+                     <biblScope unit="issue">10</biblScope>
+                     <biblScope unit="page">99-100</biblScope>
+                  </monogr>
+               </biblStruct>
+            </listBibl>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+         <projectDesc>
+            <p>Codifica realizzata per l'esame di Codifica di testi. Corso di laurea triennale in Informatica umanistica dell'Università di Pisa</p>
+         </projectDesc>
+         <editorialDecl>
+            <hyphenation>
+              <p>Si è scelto di rimuovere i trattini di marcatura degli "a capo" in fine riga.</p>
+           </hyphenation>
+            <normalization>
+               <p>Si è scelto di normalizzare gli spazi tra parola e punteggiatura.</p>
+               <p>Si è scelto di mantenere la resa grafica del maiuscolo anche nel testo e di esplicitarne la semantica con l'uso del tag corrispondente.</p> 
+            </normalization>
+            <punctuation>
+               <p>Tutta la punteggiatura nella fonte originale è stata mantenuta e rappresentata usando il carattere corrispondente.</p>
+            </punctuation>
+            <quotation>
+               <p>Tutti i marcatori delle citazioni sono stati mantenuti e inglobati nel contenuto dell'elemento stesso.</p>
+               <p>Si è scelto di usare sempre <tag>quote</tag> per marcare citazioni che l'autore del testo attribuisce a fonti esterne allo stesso; è stato usato <tag>q</tag> per le citazioni implicite.</p>
+            </quotation>
+            <p>Si è scelto di usare lo standard anno-mese-giorno per le date.</p>
+            <interpretation>
+               <p>Si è scelto di creare una tassonomia in <tag>textClass</tag> con i principali temi del Verismo riconosciuti nei testi codificati. All'interno del testo, sono state marcate parole e frasi esemplificative di questi temi, ricondotte alle categorie corrispondenti attraverso l'uso del tag <tag>ref</tag>.</p>
+               <p>Le abbreviazioni sono state sciolte e marcate con il tag <tag>choice</tag> e le due alternative, <tag>abbr</tag> ed <tag>expan</tag>.</p>
+            </interpretation>
+         </editorialDecl>
+      </encodingDesc>
+
+      <profileDesc>
+         <textClass>
+            <keywords>
+               <term type="text" subtype="cronaca_letteraria">Articolo in rivista</term>
+            </keywords>
+            <keywords scheme="#themesTaxonomy">
+               <term type="themes" ref="coverlessTassonomia.xml#arti_visive">Arti visive</term>
+            </keywords>
+         </textClass>
+         <creation>
+            <placeName ref="coverlessListPlace.xml#CA">Milano</placeName>
+            <date when="1877-05-06">6 maggio 1877</date>
+         </creation>
+         <abstract>
+            <!-- MODIFICARE-->
+            <p>Cronaca e riflessione critica sull'Esposizione di Napoli firmata da "Il Milanese". L'autore riporta una conversazione avuta nello studio di Filippo Palizzi, alla presenza di Domenico Morelli, sul declino dell'arte moderna sopraffatta dai mestieranti a scapito dei veri innovatori. Attraverso la descrizione dell'esposizione, l'articolo difende il ruolo della critica severa e onesta della "Farfalla" contro coloro che, pur definitisi innovatori, non sanno innalzare l'arte ma ne discreditano le glorie passate.</p>
+         </abstract>
+         <langUsage>
+            <language ident="it">Italiano</language>
+            <language ident="it-x-800">Italiano di fine Ottocento</language>
+         </langUsage>
+      </profileDesc>
+      <revisionDesc>
+         <change status="draft" when="2026-08-10" resp="#DG">Prima bozza 10 agosto 2026</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <facsimile>
+   
+      <surface xml:id="pag.99">
+         <graphic url='Farfalla_1877_3_10_99.tif' width='3371.4px' height='4957.4px' />
+         <!-- Prima colonna pagina 99 -->
+         <zone ulx="333" uly="3964" lrx="1671" lry="4499" xml:id="zone_col_1-p.99"/>
+         <!-- Intestazione pagina 99 -->
+         <zone ulx="331" uly="3963" lrx="1599" lry="4216" xml:id="zone_intestazione_p.99"/>
+         <!-- Paragrafo 1 colonna 1 pag 99 -->
+         <zone ulx="353" uly="4238" lrx="1618" lry="4409" xml:id="zone_p_1-col_1-p.99"/>
+         <!-- Paragrafo 2 colonna 1 pag 99 -->
+         <zone ulx="354" uly="4390" lrx="1619" lry="4502" xml:id="zone_p_2-col_1-p.99"/>
+         
+         <!-- Seconda colonna pag 99 -->
+         <zone ulx="1706" uly="458" lrx="3043" lry="4482" xml:id="zone_col_2-p.99"/>
+         <!-- Paragrafo 2 colonna 2 pag 99 -->
+         <zone ulx="1720" uly="449" lrx="2975" lry="569" xml:id="zone_p_2-col_2-p.99"/>
+         <!-- Parafrafo 3 colonna 2 pag 99 -->
+         <zone ulx="1722" uly="550" lrx="2983" lry="951" xml:id="zone_p_3-col_2-p.99"/>
+         <!-- Paragrafo 4 colonna 2 pag 99 -->
+         <zone ulx="1729" uly="925" lrx="2980" lry="1299" xml:id="zone_p_4-col_2-p.99"/>
+         <!-- Paragrafo 5 colonna 2 pag 99 -->
+         <zone ulx="1723" uly="1266" lrx="2990" lry="1577" xml:id="zone_p_5-col_2-p.99"/>
+
+         <!-- Primo section divider-->
+         <zone ulx="2278" uly="1560" lrx="2439" lry="1637" xml:id="zone_sd1"/>
+         
+         <!-- Paragrafo 6 colonna 2 pag 99 -->
+         <zone ulx="1734" uly="1643" lrx="3000" lry="2054" xml:id="zone_p_6-col_2-p.99"/>
+         <!-- Paragrafo 7 colonna 2 pag 99 -->
+         <zone ulx="1738" uly="2036" lrx="2995" lry="2300" xml:id="zone_p_7-col_2-p.99"/>
+         
+         <!-- Secondo section divider -->
+         <zone ulx="2304" uly="2303" lrx="2420" lry="2386" xml:id="zone_sd2"/>
+         
+         <!-- Paragrafo 8 colonna 2 pag 99 -->
+         <zone ulx="1730" uly="2383" lrx="2999" lry="2693" xml:id="zone_p_8-col_2-p.99"/>
+         <!-- Paragrafo 9 colonna 2 pag 99 -->
+         <zone ulx="1742" uly="2678" lrx="2995" lry="2876" xml:id="zone_p_9-col_2-p.99"/>
+         <!-- Paragrafo 10 colonna 2 pag 99 -->
+         <zone ulx="1748" uly="2872" lrx="3005" lry="3265" xml:id="zone_p_10-col_2-p.99"/>
+         <!-- Paragrafo 11 colonna 2 pag 99 -->
+         <zone ulx="1750" uly="3256" lrx="3006" lry="3417" xml:id="zone_p_11-col_2-p.99"/>
+         <!-- Paragrafo 12 colonna 2 pag 99 -->
+         <zone ulx="1750" uly="3400" lrx="3007" lry="3608" xml:id="zone_p_12-col_2-p.99"/>
+         
+         <!-- Terzo section divider -->
+         <zone ulx="2325" uly="3619" lrx="2428" lry="3702" xml:id="zone_sd3"/>
+         
+         <!-- Paragrafo 13 colonna 2 pag 99 -->
+         <zone ulx="1739" uly="3696" lrx="3016" lry="4336" xml:id="zone_p_13-col_2-p.99"/>
+         <!-- Paragrafo 14 colonna 2 pag 99 -->
+         <zone ulx="1751" uly="4328" lrx="3011" lry="4486" xml:id="zone_p_14-col_2-p.99"/>
+      </surface>
+      
+      <surface xml:id="pag.100">
+         <graphic url='Farfalla_1877_3_10_100.tif' width='3385.4px' height='4969.4px' />
+         <!-- Colonna 1 pag 100 -->
+         <zone ulx="439" uly="474" lrx="1733" lry="3416" xml:id="zone_col_1-p.100"/>
+         <!-- Quarto section divider -->
+         <zone ulx="1031" uly="483" lrx="1158" lry="557" xml:id="zone_sd4"/>
+
+         <!-- Paragrafo 15 colonna 1 pag 100-->
+         <zone ulx="449" uly="582" lrx="1716" lry="736" xml:id="zone_p_15-col_1-p.100"/>
+         <!-- Paragrafo 16 colonna 1 pag 100  -->
+         <zone ulx="436" uly="733" lrx="1717" lry="1119" xml:id="zone_p_16-col_1-p.100"/>
+         <!-- Paragrafo 17 colonna 1 pag 100 -->
+         <zone ulx="442" uly="1112" lrx="1712" lry="1935" xml:id="zone_p_17-col_1-p.100"/>
+         <!-- Paragrafo 18 colonna 1 pag 100 -->
+         <zone ulx="449" uly="1930" lrx="1251" lry="1988" xml:id="zone_p_18-col_1-p.100"/>
+         
+         <!-- Quinto section divider -->
+         <zone ulx="1022" uly="2018" lrx="1159" lry="2099" xml:id="zone_sd5"/>
+         
+         <!-- Paragrafo 19 colonna 1 pag 100 -->
+         <zone ulx="434" uly="2127" lrx="1700" lry="2654" xml:id="zone_p_19-col_1-p.100"/>
+         
+         <!-- Sesto section divider -->
+         <zone ulx="986" uly="2670" lrx="1139" lry="2751" xml:id="zone_sd6"/>
+         
+         <!-- Paragrafo 20 colonna 1 pag 100 -->
+         <zone ulx="439" uly="2772" lrx="1703" lry="3019" xml:id="zone_p_20-col_1-p.100"/>
+         
+         <!-- Firma dell'autore -->
+         <zone ulx="1142" uly="3029" lrx="1644" lry="3093" xml:id="zone_sign"/>
+         <!-- Footnote -->
+         <zone ulx="447" uly="3150" lrx="1691" lry="3370" xml:id="zone_footnote"/>
+         <!-- Firma note-->
+         <zone ulx="1311" uly="3376" lrx="1583" lry="3418" xml:id="zone_sign2"/>
+      </surface>
+
+   </facsimile>
+   
+   <text>
+      <body>
+         <pb n="99" xml:id="Farfalla_1877_3_10_99" facs="Farfalla_1877_3_10_99.tif"/>
+         <cb n="1" xml:id="col_1-p.99" facs="#zone_col_1-p.99"/>
+         
+         <div type="intestazione" facs="#zone_intestazione_p.99">
+            <head type="main">IN GIRO PER L'ITALIA</head>
+            <metamark function="sectionDivider" rend="ondulata">-</metamark>
+            <head type="subtitle">ALL'ESPOSIZIONE DI NAPOLI</head>
+         </div>
+         
+         <div type="text">
+            <p rend="first-line-indented" xml:id="p_1" facs="#zone_p_1-col_1-p.99"><q>«Colui che pel primo ha immaginato di fare
+            assieme esposizioni e congressi artistici, deve essere 
+            stato o un grande imbecille o un gran furfante.»</q></p>
+
+            <p rend="first-line-indented" xml:id="p_2" facs="#zone_p_2-col_1-p.99 #zone_p_2-col_2-p.99">Queste parole, presente <persName type="real" ref="coverlessListPerson.xml#domenicoMorelli">Domenico Morelli</persName>, pro
+            nunciava in una lunga conversazione che ebbi l'onore
+               
+            <cb n="2" xml:id="col_2-p.99" facs="#zone_col_2-p.99"/>
+            
+            d'aver seco giorni sono, <persName type="real" ref="coverlessListPerson.xml#filippoPalizzi">Filippo Palizzi</persName>, il padre della
+            <term type="verbum" subtype="arti_visive">moderna pittura napoletana</term>.</p>
+            
+            <p rend="first-line-indented" xml:id="p_3" facs="#zone_p_3-col_2-p.99">Eravamo nel suo studio, cioè in uno dei più glo
+            riosi musei che oggi vanti l'<placeName type="real" ref="coverlessListPlace.xml#IT">Italia</placeName>. Io guardavo am
+            mirato l'infinito numero delle sue creazioni, che ren
+            dono quelle stanze un vero santuario dell'arte, ed 
+            ascoltavo commosso e riverente le parole di quel 
+            grande e vastissimo ingegno, che si applicò a tutti 
+            i vari rami della <term type="verbum" subtype="arti_visive">pittura</term> ed in tutti produsse con una
+            eccellenza più presto unica che rara.</p>
+            
+            <p rend="first-line-indented" xml:id="p_4" facs="#zone_p_4-col_2-p.99">Pensavo che ero in <placeName type="real" ref="coverlessListPlace.xml#NA">Napoli</placeName> per dirne alla nostra 
+            <orgName type="journal" ref="coverlessListOrganization.xml#farfalla" rend="italic">Farfalla</orgName>; che in <placeName type="real" ref="coverlessListPlace.xml#NA">Napoli</placeName> abbiamo ora precisamente
+            e congresso ed esposizione; che, riconoscendo la giu
+            stizia delle ragioni che <persName type="real" ref="coverlessListPerson.xml#filippoPalizzi">Palizzi</persName> portava in appoggio
+            della sua asserzione, mi toccava pur di fare una
+            scelta, onde non meritare, neppur di riflesso ed in 
+            piccolissima parte il suo acuto rimprovero.</p>
+            
+            <p rend="first-line-indented" xml:id="p_5" facs="#zone_p_5-col_2-p.99">Nè la scelta poteva esser dubbia. Parlando della
+            esposizione si tratta di esaminare le <term type="verbum" subtype="arti_visive">opere</term> di coloro 
+            che fanno o che almeno tentano di fare; del con
+            gresso invece non vi è che da riferire le parole di 
+            coloro che, in gran parte, parlano alla impotenza di
+            fare.</p>
+            
+            <metamark function="sectionDivider" facs="#zone_sd1"><graphic url="farfallina.png"/></metamark>
+            
+            <p rend="first-line-indented" xml:id="p_6" facs="#zone_p_6-col_2-p.99">Ma — pensavo — lasciando il campo della teoria 
+            e della parola per quello della pratica e dell'azione
+            — vale la pena, trattandosi di una esposizione nazio
+            nale e di un <rs type="journal" ref="coverlessListOrganization.xml#farfalla">giornale bimensile</rs> - occuparsi di 
+            quelli che tentano? non val meglio tener qui conto 
+            solo di coloro che a fare sono già riusciti, e portarli
+            ad esempio, onde servano agli altri e d'eccitamento
+            e di sprone?</p>
+            
+            <p rend="first-line-indented" xml:id="p_7" facs="#zone_p_7-col_2-p.99">Sparisce in un giorno - pensavo e penso - la gran 
+            folla dei mestieranti. Chi rimane, se non i pochi e 
+            veri artisti? — Ed è giusto unire i nomi di queste
+            due categorie di esseri, che sono separati da un a
+            bisso senza fondo? Non mi pareva nè mi pare.</p>
+            
+            <metamark function="sectionDivider" facs="#zone_sd2"><graphic url="farfallina.png"/></metamark>
+            
+            <p rend="first-line-indented" xml:id="p_8" facs="#zone_p_8-col_2-p.99">Ma poi, visitando e rivisitando l'esposizione, m'è
+            venuto e s'è ingigantito un timore: di dover rico
+            noscere in essa troppo grande folla di mestieranti 
+            per troppo lieve numero d'artisti; e che perciò la 
+            somma di tutte le impressioni, troppo dovesse riu
+            scire sconfortante.</p>
+            
+            <p rend="first-line-indented" xml:id="p_9" facs="#zone_p_9-col_2-p.99">Ed ho contato: in parecchie centinaia, ho raccolto
+            poche decine di nomi, e a tutta prima sono rimasto 
+            spaventato, e lo spavento mi ha indotto ad una grave
+            e triste meditazione.</p>
+            
+            <p rend="first-line-indented" xml:id="p_10" facs="#zone_p_10-col_2-p.99">Ma tanto è vero che è meditando che la mente 
+            si rischiara, che poco a poco la mia impressione su
+            biva una strana trasformazione. La gran folla dei
+            caduti spariva; rimanevano in luce quei nomi; ma 
+            non più pochi mi parevano per un breve periodo
+            artistico, assai. Tanto più, che tutta non è raccolta
+            in esssi l'arte italiana, e molti non compresi in questa
+            esposizione ne rammentavo di grandi.</p>
+            
+            <p rend="first-line-indented" xml:id="p_11" facs="#zone_p_11-col_2-p.99">E — fossero anche tra tutti, poca quantità in con
+            fronto alla massa sterminata dei guasta-arte — l'arte
+            pensavo, non si misura a numero, ma a qualità.</p>
+            
+            <p rend="first-line-indented" xml:id="p_12" facs="#zone_p_12-col_2-p.99">È, del resto, la solita vicenda. Ogni secolo vi la
+            scia dieci, venti nomi. — Sono essi quelli di tutti co
+            loro che hanno professato le arti al loro tempo? —
+            No certo, sono la parte minima. E non bastano?</p>
+            
+            <metamark function="sectionDivider" facs="#zone_sd3"><graphic url="farfallina.png"/></metamark>
+            
+            <p rend="first-line-indented" xml:id="p_13" facs="#zone_p_13-col_2-p.99">Da questa esposizione adunque -- che pure non 
+            è la migliore che io abbia mai veduta, ho potuto, ad 
+            onta della moltissima marocca, trarre la importante 
+            persuasione, che le sorti della <term type="verbum" subtype="arti_visive">pittura</term> e delle <term type="verbum" subtype="arti_visive">scol
+            tura</term>, corrono, per fortuna, diverse da quelle della 
+            letteratura e della musica, e che per esse l'età no
+            stra nulla ha da invidiare alle età che ci stanno os
+            servando con giusta alterezza per fasti gloriosi. Che
+            <term type="verbum" subtype="arti_visive">pittura</term> e <term type="verbum" subtype="arti_visive">scultura</term>, arti più indulgenti della lettera
+            tura e più varie della musica, hanno saputo trasfor
+            marsi e trovare un linguaggio moderno, con cui e
+            sprimono con novità tutti gli affetti umani, come 
+            ritraggono tutti gli aspetti della natura.</p>
+            
+            <p rend="first-line-indented" xml:id="p_14" facs="#zone_p_14-col_2-p.99">In <term type="verbum" subtype="arti_visive">pittura</term> e <term type="verbum" subtype="arti_visive">scoltura</term> abbiamo visto e abbiamo 
+            gl'<hi rend="italic">innovatori</hi> ed è per questo che abbiamo e <term type="verbum" subtype="arti_visive">pittu
+            ra</term> e <term type="verbum" subtype="arti_visive">scultura</term> nostre propriamente, vive e <term type="verbum" subtype="vero_verita">vere</term>.</p>
+            
+            <pb n="100" xml:id="Farfalla_1877_3_10_100" facs="Farfalla_1877_3_10_100.tif"/>
+            <cb n="1" xml:id="col_1-p.100" facs="#zone_col_1-p.100"/>
+            <metamark function="sectionDivider" facs="#zone_sd4"><graphic url="farfallina.png"/></metamark>
+            
+            <p rend="first-line-indented" xml:id="p_15" facs="#zone_p_15-col_1-p.100">E cogli innovatori della <term type="verbum" subtype="arti_visive">pittorica</term> e della <term type="verbum" subtype="arti_visive">plastica</term>
+            non mi troverai, no, severo come temi, <rs type="person" subtype="real" ref="coverlessListPerson.xml#ioFarfalla">amico diret
+            tore</rs> della nostra <orgName type="journal" ref="coverlessListOrganization.xml#farfalla" rend="italic">Farfalla</orgName>.</p>
+            
+            <p rend="first-line-indented" xml:id="p_16" facs="#zone_p_16-col_1-p.100">Grave, importantissima questione è questa, o <rs type="person" subtype="real" ref="coverlessListPerson.xml#ioFarfalla">ami
+            co</rs>, degli innovatori -- veri e falsi -- e del compito 
+            in faccia ad essi della critica sincera, spassionata, 
+            onesta ed un pochino illuminato; una questione di 
+            cui è intratteremo presto a lungo, perchè lo merita,
+            e noi lo dobbiamo, perchè giovani e seriamente in
+            namorati dell'arte sotto tutte le sue <term type="forma_letteraria" subtype="autorialita_narrativita">forme</term> e manifestazioni.(1)
+            
+            <note type="footnote" facs="#zone_footnote">
+
+               <p>(1) L'ottimo amico <persName type="real" ref="coverlessListPerson.xml#ilMilanese" rend="italic">Milanese</persName>, a quanto pare, ha preso cappello
+                  per una innocentissima <term type="verbum" subtype="studio_osservazione">osservazione</term> da me fattagli. Minaccia
+                  <hi rend="italic">sfogarsi</hi> e intrattenersi a lungo degli innovatori della musica e della 
+                  letteratura. Faccia pure. Le colonne della <orgName type="journal" ref="coverlessListOrganization.xml#farfalla" rend="italic">Farfalla</orgName> sono a sua 
+                  disposizione. — Le amichevoli discussioni portano sempre a 
+                  buoni risultati.</p>
+               
+               <p rend="align-right" facs="#zone_sign2"><persName type="real" ref="coverlessListPerson.xml#ioFarfalla">Io <hi rend="uppercase">FARFALLA</hi></persName></p>
+               
+            </note></p>
+            
+            <p rend="first-line-indented" xml:id="p_17" facs="#zone_p_17-col_1-p.100">Ma intanto, o <rs type="person" subtype="real" ref="coverlessListPerson.xml#ioFarfalla">amico</rs>, voglio dirti fin'ora che, se
+            nego e merito vero e vera novità, contro il parer tuo,
+            a certi preteri innovatori della musica e della lette
+            ratura -- mentre lo ammetto, e grande, grande assai,
+            nei veri innovatori della <term type="verbum" subtype="arti_visive">pittura</term> e della <term type="verbum" subtype="arti_visive">scultura</term> -- egli 
+            è perche i primi intendono elevare l'edificio della 
+            propria fama e della propria gloria dei grandi che li hanno pre
+            ceduti; mentre i secondi disperano di raggiungere 
+            una meta così alta come quella a cui ammirano giunti
+            i celebrati da secoli e da anni; perchè i primi si 
+            avviano, o credono di avviarsi alla fama ed alla 
+            gloria, non col lungo <term type="verbum" subtype="studio_osservazione">studio</term>, ma con la presunzione; 
+            mentre i secondi non si avanzano che con un ardire 
+            misurato dalla tema di chi vede giusto nel sommo 
+            merito altrui. I primi declamano, i secondi <term type="verbum" subtype="studio_osservazione">studiano</term>; 
+            questi fanno, quelli non cercano che di disfare.</p>
+            
+            <p rend="first-line-indented" xml:id="p_18" facs="#zone_p_18-col_1-p.100">E disfanno infatti -- sè stessi.</p>
+            
+            <metamark function="sectionDivider" facs="#zone_sd5"><graphic url="farfallina.png"/></metamark>
+            
+            <p rend="first-line-indented" xml:id="p_19" facs="#zone_p_19-col_1-p.100">Non <rs type="person" subtype="real" ref="coverlessListPerson.xml#ilMilanese">io</rs>, nè altri, ha inteso <persName type="real" ref="coverlessListPerson.xml#ercoleRosa">Rosa</persName>, <persName type="real" ref="coverlessListPerson.xml#costantinoBarbella">Barbella</persName>, <persName type="real" ref="coverlessListPerson.xml#achilleDOrsi">D'Orsi</persName>, 
+            <persName type="real" ref="coverlessListPerson.xml#giovanniBattistaAmendola">Amendola</persName>, <persName type="real" ref="coverlessListPerson.xml#raffaeleBelliazzi">Belliazzi</persName>, tutti giovani e animosi scultori; 
+            nè <persName type="real" ref="coverlessListPerson.xml#francescoPaoloMichetti">Michetti</persName> o <persName type="real" ref="coverlessListPerson.xml#giacomoDiChirico">Di Chirico</persName>, o <persName type="real" ref="coverlessListPerson.xml#ramonTusquets">Tousquetz</persName>, o <persName type="real" ref="coverlessListPerson.xml#eduardoFiore">Fiore</persName>, o 
+            <persName type="real" ref="coverlessListPerson.xml#robertoFontana">Fontana</persName>, o <persName type="real" ref="coverlessListPerson.xml#micheleCammarano">Cammarono</persName>, o <persName type="real" ref="coverlessListPerson.xml#filippoCarcano">Carcano</persName>, o <persName type="real" ref="coverlessListPerson.xml#antonioMancini">Mancini</persName>, o 
+            <persName type="real" ref="coverlessListPerson.xml#marcoCalderini">Calderini</persName>, o <persName type="real" ref="coverlessListPerson.xml#eugenioGignous">Gignous</persName>, o <persName type="real" ref="coverlessListPerson.xml#salvatoreMarchesi">Marchesi</persName>, tutti giovani e ar
+            ditissimi pittori, disprezzare le glorie dell'arte greca
+            o italica -- come usano per la musica o per la let
+            teratura certi pretesi innovatori del giorno. Essi sen
+            tono che l'<term type="verbum" subtype="arti_visive">arte nuova</term> non può essere la negazione,
+            bensi la continuazione dell'antica. E così ne creano
+            una veramente</p>
+            
+            <metamark function="sectionDivider" facs="#zone_sd6"><graphic url="farfallina.png"/></metamark>
+            
+            <p rend="first-line-indented" xml:id="p_20" facs="#zone_p_20-col_1-p.100">E di questi giovani animosi, arditi, alcuni dei quali 
+            già sono grandi e altri stanno per divenirlo, gratis
+            simo mi riuscirà il parlare -- pensando che da soli
+            basterebbero a mantener vivo l'onore dell'arte ita
+            liana.</p>
+         </div>
+         
+         <div type="closer">
+            <signed facs="#zone_sign">
+               <persName type="real" ref="coverlessListPerson.xml#ilMilanese" rend="bold">Il Milanese</persName>
+            </signed>
+         </div>
+
+      </body>
+   </text>
+</TEI>

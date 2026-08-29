@@ -1,0 +1,1583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title> Lista di entità nominate per i testi codificati in COVerLeSS: le persone
+				</title>
+				<respStmt>
+					<resp>Conversione TEI P5 a cura di</resp>
+					<name xml:id="MP">Mariagiusi Polizzi</name>
+					<name xml:id="GZ">Giuseppe Zappalà</name>
+					<name xml:id="DG">Daria Gabbrielli</name>
+				</respStmt>
+			</titleStmt>
+			<editionStmt>
+				<edition n="1">Digital edition - <date when="2024-10">October 2024</date></edition>
+				<respStmt>
+					<resp>Digital edition project coordineted by</resp>
+					<name xml:id="DS">Daria Spampinato</name>
+					<name xml:id="ADS">Antonio Di Silvestro</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding model by</resp>
+					<name resp="#DS">Daria Spampinato</name>
+					<name xml:id="LM">Laura Mazzagufo</name>
+					<name xml:id="AMDG">Angelo Mario Del Grosso</name>
+					<name xml:id="DB">Denise Bruno</name>
+				</respStmt>
+				<funder>NextGenerationEU</funder>
+				<funder>Ministero dell'Università e della Ricerca</funder>
+				<funder>Italia Domani - Piano Nazionale di Ripresa e Resilienza</funder>
+				<funder ref="coverlessListOrganization.xml#CNR">CNR - Consiglio Nazionale delle
+					Ricerche</funder>
+				<funder ref="coverlessListOrganization.xml#UniCT">Università di Catania</funder>
+			</editionStmt>
+			<publicationStmt>
+				<!-- Dati di diffusione e distribuzione dell'edizione -->
+				<authority ref="coverlessListOrganization.xml#ISTC">CNR ISTC - Istituto di Scienze e
+					Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche</authority>
+				<authority ref="coverlessListOrganization.xml#UniCT">Università di
+					Catania</authority>
+				<date when="2025">2025</date>
+				<availability status="free">
+					<licence target="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC
+						4.0</licence>
+				</availability>
+				<idno type="filename">coverlessListPerson.xml</idno>
+			</publicationStmt>
+			<sourceDesc>
+				<listPerson xml:id="ListPerson">
+
+					<!-- aggiungere le persone: -->
+					<person xml:id="casellaGiglioliCostanza">
+						<persName type="real" role="author">
+							<ref target="http://viaf.org/viaf/553159474190227661826"/>
+							<forename>Costanza</forename>
+							<surname>Casella</surname>
+							<surname>Giglioli</surname>
+							<addName type="pseudonym"/>
+						</persName>
+						<sex>F</sex>
+						<birth>
+							<date when="1841">1841</date>
+							<placeName ref="TEI-ListPlace.xml#Casteggio">Casteggio</placeName>
+						</birth>
+						<death>
+							<date when="1932">1932</date>
+							<placeName ref="TEI-ListPlace.xml#GE">Genova</placeName>
+						</death>
+						<note>
+							<p>Educatrice e ispettrice scolastica italiana.</p>
+						</note>
+					</person>
+
+					<person xml:id="giovanniVerga">
+						<persName type="real" role="author">
+							<ref target="http://viaf.org/viaf/18647"/>
+							<forename>Giovanni</forename>
+							<surname>Verga</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1840">1840</date>
+							<placeName ref="TEI-ListPlace.xml#CT">Catania</placeName>
+						</birth>
+						<death>
+							<date when="1922">1922</date>
+							<placeName ref="TEI-ListPlace.xml#CT">Catania</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giovanni-verga/">
+							<p>Scrittore (Catania 1840 - ivi 1922). Autore di novelle e romanzi, il
+								cui stile e linguaggio hanno rinnovato profondamente la narrativa
+								italiana, V. è considerato il più autorevole esponente del verismo.
+								Raggiunse la notorietà con alcuni romanzi, Eva e Tigre reale (1873)
+								e novelle (Nedda, 1874), nei quali espresse la sua predilezione per
+								temi legati a diversi ambienti sociali e per il gusto per una
+								scrittura asciutta e comunicativa. Tra il 1878 e il 1881 elaborò un
+								progetto innovatore rispetto alle esperienze precedenti, quello di
+								trasferire nei romanzi l'attenta osservazione del mondo circostante,
+								ponendo l'accento sui desideri degli uomini e sul loro modo di
+								parlare. Ne I Malavoglia (1881) V. perfezionò una tecnica narrativa
+								caratterizzata dall'uso del discorso indiretto libero, che permette
+								di inserire nel racconto le voci e i punti di vista dei personaggi,
+								le loro parole semplici e la loro grammatica elementare. In Mastro
+								don Gesualdo (1889) rispetto allo stile corale de I Malavoglia, V.
+								raffigurò con distacco luoghi e paesaggi lividi e desolati, specchio
+								della miseria umana che i personaggi del romanzo rappresentano.</p>
+						</note>
+					</person>
+
+					<person xml:id="Otello" ana="#Otello">
+						<persName type="fictional">
+							<surname>Otello</surname>
+						</persName>
+						<sex>M</sex>
+						<note source="https://www.treccani.it/enciclopedia/otello/">(ingl. Othello)
+							Personaggio della tragedia di W. Shakespeare intitolata Othello, the
+							Moor of Venice. Composta intorno al 1604, ebbe come fonte una novella
+							degli Ecatommiti di G. Giraldi, letta forse in traduzione francese. Tra
+							i capolavori del teatro shakeasperiano, l'opera ha avuto una fortuna
+							enorme. Trama: Otello, generale moro al servizio di Venezia, si è unito
+							in matrimonio d'amore con Desdemona, la giovanissima figlia del senatore
+							veneziano Brabanzio, superando l'accusa di averla quasi stregata.
+							Ricevuto l'ordine di trasferirsi a Cipro, minacciata dai Turchi, Otello
+							nomina suo luogotenente il giovane Cassio, scatenando il rancore
+							dell'alfiere Iago che comincia a tramare la sua vendetta. Questa si
+							compirà a Cipro dove Otello, cedendo alle insinuazioni di Iago, si
+							convince che Desdemona lo tradisce con Cassio e, accecato dalla gelosia,
+							la uccide; subito dopo, scopertane l'innocenza, si toglie la
+							vita.</note>
+					</person>
+
+					<person xml:id="ercoleRosa">
+						<persName type="real" role="sculptor">
+							<ref target="https://www.wikidata.org/wiki/Q1279705"/>
+							<forename>Ercole</forename>
+							<surname>Rosa</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1846-02-13">13 febbraio 1846</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Roma</placeName>
+						</birth>
+						<death>
+							<date when="1893-10-12">12 ottobre 1893</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Roma</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/ercole-rosa/" resp="DG">
+							<p>Scultore (San Severino Marche 1846 - Roma 1893). A Roma, 
+								dove si formò da autodidatta copiando i modelli classici, 
+								vinse nel 1874 il concorso per il monumento ai fratelli 
+								Cairoli (eretto sul Pincio nel 1883), che gli diede larga 
+								fama garantendogli numerose commissioni. Autore del 
+								monumento a Vittorio Emanuele II (eretto a Milano, piazza 
+								del Duomo, nel 1896), lasciò anche numerosi busti, statue 
+								e piccole sculture che mostrano larghezza d'impianto e un 
+								modellato mosso e vivace. Opere nelle gallerie d'arte 
+								moderna di Roma e di Milano, nella Pinacoteca Civica di 
+								Ascoli Piceno, ecc.</p>
+						</note>
+					</person>
+					
+					<person xml:id="costantinoBarbella">
+						<persName type="real" role="sculptor">
+							<ref target="https://www.wikidata.org/wiki/Q3695457"/>
+							<forename>Costantino</forename>
+							<surname>Barbella</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1852-01-31">31 gennaio 1852</date>
+							<placeName ref="TEI-ListPlace.xml#CH">Chieti</placeName>
+						</birth>
+						<death>
+							<date when="1925-12-05">5 dicembre 1925</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Roma</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/costantino-barbella/" resp="DG">
+							<p>Scultore italiano (Chieti 1852 - Roma 1925). Ebbe grande 
+								successo per le sue figurette in terracotta o in bronzo, di 
+								soggetto di genere, modellate con facile realismo, ispirato alla 
+								maniera pittorica di F. P. Michetti (Gall. naz. d'arte moderna di 
+								Roma, Museo di Capodimonte, Pinacoteca di Chieti, ecc.).</p>
+						</note>
+					</person>
+					
+					<person xml:id="achilleDOrsi">
+						<persName type="real" role="sculptor">
+							<ref target="https://www.wikidata.org/wiki/Q263967"/>
+							<forename>Achille</forename>
+							<surname>D'Orsi</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1845-08-06">6 agosto 1845</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</birth>
+						<death>
+							<date when="1929-02-08">8 febbraio 1929</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/achille-d-orsi/" resp="DG">
+							<p>Scultore italiano (Napoli 1845 - ivi 
+								1929). Fece parte della corrente 
+								verista, in costante opposizione con 
+								l'accademismo dominante a Napoli 
+								ai suoi tempi. Come Teofilo Patini 
+								nella pittura, così egli trattò 
+								polemicamente nelle sue opere 
+								temi sociali e umanitarî (<hi rend="italic">Parassiti</hi>, 
+								1877, Reggia di Capodimonte; 
+								<hi rend="italic">Proximus tuus</hi>, 1880, Galleria d'arte 
+								moderna di Roma), spingendo lo 
+								studio della realtà a un estremo che 
+								è ben lungi dalla visione poetica di 
+								un Gemito.</p>
+						</note>
+					</person>
+					
+					<person xml:id="giovanniBattistaAmendola">
+						<persName type="real" role="sculptor">
+							<ref target="https://www.wikidata.org/wiki/Q3766559"/>
+							<forename>Giovanni</forename>
+							<forename>Battista</forename>
+							<surname>Amendola</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1848-01-19">19 gennaio 1848</date>
+							<placeName ref="TEI-ListPlace.xml#SA">
+								<settlement type="municipality">Sarno</settlement>
+								<settlement type="provincia" key="SA">Salerno</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1887-12-17">17 dicembre 1887</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giovanni-battista-amendola/" resp="DG">
+							<p>Scultore (Episcopio di Sarno 1848 - Napoli 1887). Nel 
+								1877, il suo Caino (ora nella Gall. dell'Accad. di Belle 
+								Arti di Napoli) suscitò aspre polemiche. Lavorò in 
+								seguito (1879-84) anche in Francia e in Inghilterra. 
+								Meglio che nella grande statuaria (G. Murat, facciata 
+								del pal. Reale di Napoli), si espresse in piccole 
+								sculture di spirito veristico e vagamente romantico 
+								(Il maniscalco, Napoli, Museo di S. Martino).</p>
+						</note>
+					</person>
+					
+					<person xml:id="raffaeleBelliazzi">
+						<persName type="real" role="sculptor">
+							<ref target="https://www.wikidata.org/wiki/Q7282504"/>
+							<forename>Raffaele</forename>
+							<surname>Belliazzi</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1835-12-09">9 dicembre 1835</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</birth>
+						<death>
+							<date when="1917-05-23">23 maggio 1917</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/raffaele-belliazzi/" resp="DG">
+							<p>Scultore e pittore (Napoli 1835 - ivi 1917), autore di piccole sculture di genere, spesso in terracotta, 
+								trattate con accento veristico (Pastore dormiente, Avvicinarsi della procella, Napoli, Mus. di 
+								Capodimonte). È sua anche la statua di Carlo III sulla facciata del Pal. Reale di Napoli.</p>
+						</note>
+					</person>
+					
+					<person xml:id="francescoPaoloMichetti">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q3081044"/>
+							<forename>Francesco</forename>
+							<forename>Paolo</forename>
+							<surname>Michetti</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1851-10-02">2 ottobre 1851</date>
+							<placeName ref="TEI-ListPlace.xml#PE">
+								<settlement type="municipality">Tocco da Casauria</settlement>
+								<settlement type="provincia" key="PE">Pescara</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1929-03-05">5 marzo 1929</date>
+							<placeName ref="TEI-ListPlace.xml#CH">
+								<settlement type="municipality">Francavilla al Mare</settlement>
+								<settlement type="provincia" key="CH">Chieti</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/francesco-paolo-michetti/" resp="DG">
+							<p>Pittore (Tocco da Casauria, Chieti, 
+								1851 - Francavilla a Mare 1929). 
+								Recatosi nel 1867 a Napoli, studiò 
+								all'accademia con D. Morelli; fu 
+								condiscepolo e amico di E. Dalbono 
+								e formò il suo stile in un ambiente 
+								dominato dall'influsso di M. Fortuny, 
+								raggiungendo tuttavia 
+								rapidamente una spiccata autonomia stilistica (<hi rend="italic">Autoritratto giovanile</hi> Napoli, museo di S. Martino; 
+								<hi rend="italic">Raccolta delle olive</hi>, esposta a Parigi nel 1875). Autore di quadri raffiguranti bambini e animali 
+								(Napoli, museo di S. Martino), nel 1877 divenne popolare col <hi rend="italic">Corpus Domini</hi> (Roma, coll. privata), 
+								presentato all'Esposiz. naz. di belle arti a Napoli. Contribuì certo alla sua fama la scelta dei temi, per 
+								lo più scene e costumi di Abruzzo, in quegli stessi anni trattati da G. D'Annunzio, di cui fu amico; 
+								stretti furono anche i rapporti con A. De Nino. Oltre alle sue grandi tele (<hi rend="italic">Voto</hi>, 1880-83, Roma, 
+								Galleria nazionale d'arte moderna; <hi rend="italic">Le serpi e Gli storpi</hi>, esposti a Parigi nel 1900, Francavilla, Palazzo 
+								Comunale; <hi rend="italic">La figlia di Jorio</hi>, 1894-95, Pescara, Municipio), che rivelano l'esigenza di sottrarsi alla 
+								freddezza della pittura storica e accademica, molto note furono anche figure di pastorelle, scene 
+								d'Abruzzo, studî di teste di giovani, di popolane, di contadine, a olio e a pastello. Eseguì anche 
+								ritratti ufficiali e numerosi autoritratti. Nella ricerca di un'assoluta fedeltà alla natura, ebbe grande 
+								importanza per M. la scoperta della fotografia, cui si dedicò con entusiasmo soprattutto negli 
+								ultimi anni, quando si limitava a dipingere saltuariamente piccoli quadri quasi monocromi 
+								imperniati sulla ricerca del motivo e della luce. Il convento di S. Francesco di Paola a Francavilla, da 
+								lui acquistato e trasformato in cenacolo letterario, offre interessanti testimonianze del suo gusto 
+								liberty, che era ancor più evidente nel casino da lui costruito in riva al mare, distrutto durante la 
+								seconda guerra mondiale. Fu senatore del Regno.</p>
+						</note>
+					</person>
+					
+					<person xml:id="giacomoDiChirico">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q1396092"/>
+							<forename>Giacomo</forename>
+							<surname>Di Chirico</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1844-01-27">27 gennaio 1844</date>
+							<placeName ref="TEI-ListPlace.xml#PO">
+								<settlement type="municipality">Venosa</settlement>
+								<settlement type="provincia" key="PO">Potenza</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1883-12-26">26 dicembre 1883</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giacomo-di-chirico_(Dizionario-Biografico)/" resp="DG">
+							<p>Nacque a Venosa (Potenza) il 27 genn. 1844 da Luigi e da Caterina Savino. Il padre morì quando 
+								egli era ancora piccolissimo, nel 1848. Il primo apprendistato nel disegno avvenne con il fratello 
+								Nicola (Venosa, 23 febbr. 1824), che era scultore; nel 1865 ottenne dal Municipio di Venosa una 
+								pensione per studiare pittura a Napoli nei due anni successivi. A Napoli si iscrisse all'accademia di 
+								belle arti e frequentò lo studio del pittore T. De Vivo che, con il suo orientamento di attardato 
+								neoclassicismo, era rigidamente accademico. Nel 1868 si recò a Roma, dove rimase tre anni; 
+								tornato a Napoli, aprì uno studio e cominciò a frequentare D. Morelli, che incise profondamente 
+								sulla sua formazione. Ugualmente importante, come per la maggior parte dei pittori storici e 
+								realistici napoletani del periodo, fu la conoscenza del pensiero di Francesco De Sanctis (De Niccolò, 
+								1884).</p>
+						</note>
+					</person>
+					
+					<person xml:id="ramonTusquets">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q3822909"/>
+							<forename>Ramon</forename>
+							<surname>Tusquets</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1838-09-08">8 settembre 1838</date>
+							<placeName ref="TEI-ListPlace.xml#Barcellona">Barcellona</placeName>
+							<country key="ES">Spagna</country>
+						</birth>
+						<death>
+							<date when="1904-03-11">11 marzo 1904</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Roma</placeName>
+						</death>
+						<note source="https://www.berardiarte.it/artisti/raimondo-tusquets-y-maignon/" resp="DG">
+							<p>Ramon Tusquets y Maignon, nato a Barcellona nel 1837, figlio di un ricco mercante spagnolo, inizialmente segue 
+								le orme paterne del commercio. Ma, versato nel disegno e nella pittura, dopo la morte del padre, decide di 
+								dedicare la sua vita all’arte: inizia i suoi studi con l’artista locale Ramón Moliné e poco dopo, raccolti i risparmi 
+								per la partenza, decide di compiere il tipico soggiorno di formazione in Italia. Passato il primo periodo Napoli, 
+								dove coglie subito gli elementi dello sciolto e luminoso paesaggismo verista ben riscontrabile nelle sue vedute, si 
+								lega al grande Mariano Fortuny, che lo introduce ai temi orientalisti e di genere. Stabilitosi poi a Roma, si 
+								inserisce subito nella cerchia di pittori catalani, divenendo uno degli artisti più apprezzati soprattutto nella 
+								trattazione di soggetti di genere e di costume, ma anche di episodi di storia.</p>
+						</note>
+					</person>
+					
+					<person xml:id="eduardoFiore">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q113562316"/>
+							<forename>Eduardo</forename>
+							<surname>Fiore</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1831-07-17">17 luglio 1831</date>
+							<placeName ref="TEI-ListPlace.xml#CZ">
+								<settlement type="municipality">Lamezia Terme</settlement>
+								<settlement type="provincia" key="CZ">Catanzaro</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1904-03-11">13 aprile 1916</date>
+							<placeName ref="TEI-ListPlace.xml#CS">
+								<settlement type="municipality">San Benedetto Ullano</settlement>
+								<settlement type="provincia" key="CS">Cosenza</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note resp="DG"></note>
+					</person>
+					
+					<person xml:id="robertoFontana">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q10363343"/>
+							<forename>Roberto</forename>
+							<surname>Fontana</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1844-04-10">10 aprile 1844</date>
+							<placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>
+						</birth>
+						<death>
+							<date when="1907-11-25">25 novembre 1907</date>
+							<placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/roberto-fontana/" resp="DG">
+							<p>Pittore e incisore italiano (Milano 1844 - ivi 1907), allievo di G. Bertini all'Accademia di Brera. Visse a 
+								Firenze e poi a Venezia, dipingendo quadri storici e paesaggi. Nei suoi ritratti è evidente l'influenza 
+								di T. Cremona.</p>
+						</note>
+					</person>
+					
+					<person xml:id="micheleCammarano">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q13178592"/>
+							<forename>Michele</forename>
+							<surname>Cammarano</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1835-02-23">23 febbraio 1835</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</birth>
+						<death>
+							<date when="1920-09-21">21 settembre 1920</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/michele-cammarano/" resp="DG">
+							<p>Pittore italiano (Napoli 1835 - ivi 
+								1920), figlio di Salvatore; allievo di G. 
+								Smargiassi e di F. Palizzi, esordì con 
+								grandi quadri storici, uno dei quali, <hi rend="italic">I 
+								massacri di Altamura</hi> (1863), ebbe 
+								grande successo. Passò poi a temi 
+								più attuali, quali la <hi rend="italic">Carica dei 
+								bersaglieri a Porta Pia</hi>, 1871 (Mus. di 
+								Capodimonte), <hi rend="italic">Il 24 giugno a S. 
+								Martino</hi>, 1883, e la <hi rend="italic">Battaglia di 
+								Dogali</hi>, 1893 (ambedue nella Gall. 
+								naz. d'arte moderna di Roma). Migliori i paesaggi e le vedute di forte accento veristico quali la 
+								<hi rend="italic">Piazza San Marco</hi> (1869; Roma, Gall. naz. d'arte moderna).</p>
+						</note>
+					</person>
+					
+					<person xml:id="filippoCarcano">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q3745131"/>
+							<forename>Filippo</forename>
+							<surname>Carcano</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1840">1840</date>
+							<placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>
+						</birth>
+						<death>
+							<date when="1914">1914</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/filippo-carcano/" resp="DG">
+							<p>Pittore italiano (Milano 1840 - ivi 
+								1914). Discepolo di Fr. Hayez a Brera, 
+								esordì dipingendo quadri storici. 
+								Per il suo convinto studio dal vero e 
+								le sue ricerche luministiche fu per 
+								qualche tempo, sulla fine del 19º 
+								sec., modello ai paesisti lombardi.</p>
+						</note>
+					</person>
+					
+					<person xml:id="antonioMancini">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q603148"/>
+							<forename>Antonio</forename>
+							<surname>Mancini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1852-11-14">14 novembre 1852</date>
+							<placeName ref="TEI-ListPlace.xml#RM">
+								<settlement type="municipality">Albano Laziale</settlement>
+								<settlement type="provincia" key="RM">Roma</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1930-12-28">28 dicembre 1930</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Rome</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/antonio-mancini/" resp="DG">
+							<p>Pittore italiano (Roma 1852 - ivi 1930). Formatosi a 
+								Napoli, restò legato al quadro d'impianto 
+								seicentesco e al naturalismo ottocentesco italiano, 
+								anche se talune sue sperimentazioni (inserimento di 
+								vetro, stoffe e altri materiali sul quadro) confermano 
+								come ne avvertisse la crisi. Tra le opere: <hi rend="italic">Il 
+								prevetariello</hi> (1870, Napoli, Museo nazionale di 
+								Capodimonte).</p>
+						</note>
+					</person>
+					
+					<person xml:id="marcoCalderini">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q3845980"/>
+							<forename>Marco</forename>
+							<surname>Calderini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1850">1850</date>
+							<placeName ref="TEI-ListPlace.xml#TO">Torino</placeName>
+						</birth>
+						<death>
+							<date when="1941-02-26">26 febbraio 1941</date>
+							<placeName ref="TEI-ListPlace.xml#TO">Torino</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/marco-calderini/" resp="DG">
+							<p>Pittore italiano (Torino 1850 - ivi 
+								1941). Studiò all'Accademia di Torino 
+								e iniziò nel 1870 la sua attività di 
+								paesista, legata alla scuola di A. 
+								Fontanesi e di L. Delleani.</p>
+						</note>
+					</person>
+					
+					<person xml:id="eugenioGignous">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q593553"/>
+							<forename>Eugenio</forename>
+							<surname>Gignous</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1850-08-04">4 agosto 1850</date>
+							<placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>
+						</birth>
+						<death>
+							<date when="1906-08-30">30 agosto 1906</date>
+							<placeName ref="TEI-ListPlace.xml#VB">
+								<settlement type="municipality">Stresa</settlement>
+								<settlement type="provincia" key="VB">Verbano-Cusio-Ossola</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/eugenio-gignous/" resp="DG">
+							<p>Pittore italiano (Milano 1850 - Stresa 1906). Ebbe 
+								rapporti con T. Cremona, F. Carcano e altri scapigliati 
+								fra cui D. Ranzoni. Dal 1887 si stabilì a Stresa dove 
+								ritrasse il paesaggio lombardo, in particolare il Lago 
+								Maggiore e le vallate alpine. Nota, fra le sue opere, è 
+								Quiete (Roma, Galleria nazionale d'arte moderna).</p>
+						</note>
+					</person>
+					
+					<person xml:id="salvatoreMarchesi">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q16030888"/>
+							<forename>Salvatore</forename>
+							<surname>Marchesi</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1852-02-02">2 febbraio 1852</date>
+							<placeName ref="TEI-ListPlace.xml#PR">Parma</placeName>
+						</birth>
+						<death>
+							<date when="1926-05-27">27 maggio 1926</date>
+							<placeName ref="TEI-ListPlace.xml#PR">Parma</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/salvatore-marchesi_(Enciclopedia-Italiana)/" resp="DG">
+							<p>Pittore, nato a Parma il 2 febbraio 1852, ivi morto il 27 marzo 1926. Fu seguace e continuatore 
+								dell'arte dello zio Luigi. La sua fama d'internista s'iniziò nel 1872 all'esposizione di 
+								belle arti di Bologna, e fu confermata in quella di Milano (1872), dove espose <hi rend="italic">L'interno del coro della chiesa di S. 
+								Giovanni Evangelista</hi> in Parma (Accademia di Brera). Ebbe successi anche a Napoli, Roma, 
+								Firenze, Torino, Palermo, Parigi e Filadelfia, dove il suo quadro <hi rend="italic">Sagrestia nobile della Steccata</hi>, fu 
+								acquistato per il Museo civico. Fra i suoi interni, piacevoli per i felici giuochi di luce, per i problemi 
+								coloristici risolti con bravura, vanno ricordati: <hi rend="italic">Coro della chiesa di S. Francesco</hi> (Palermo, Museo 
+								nazionale); <hi rend="italic">Interno della Chiesa della Gancia</hi> (Roma, Palazzo Reale); <hi rend="italic">Prime note</hi> (Trieste, Museo 
+								Rivoltella); <hi rend="italic">Il chiostro di S. Giovanni degli Eremiti</hi> (Parma, R. Galleria); <hi rend="italic">Interno del duomo di Parma</hi>, 
+								<hi rend="italic">Pentimento e Novizio</hi> (Parma, coll. E. Marchesi). Dal 1886 al 1923 il M. insegnò prospettiva 
+								nell'lstituto di belle arti di Palermo.</p>
+						</note>
+					</person>					
+					
+					<person xml:id="domenicoMorelli">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q1237218"/>
+							<forename>Domenico</forename>
+							<surname>Morelli</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1823-07-07">7 luglio 1823</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</birth>
+						<death>
+							<date when="1901-08-13">13 agosto 1901</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/domenico-morelli/" resp="DG">
+							<p>Pittore (Napoli 1823 - ivi 1901). Fu, 
+								con F. Palizzi, la figura dominante 
+								dell'ambiente artistico napoletano 
+								nella seconda metà del sec. 19º; 
+								prof. (dal 1870) all'accademia di 
+								Napoli, educò tutta una 
+								generazione di pittori, tra i quali F. P. 
+								Michetti. Allievo di G. Mancinelli, 
+								soggiornò poi a Roma, prima di 
+								stabilirsi definitivamente a Napoli. Il 
+								suo dipinto <hi rend="italic">I martiri portati in cielo dagli angeli</hi>, del 1848 (Napoli, Galleria Nazionale), dimostra il 
+								suo interesse per il realismo napoletano del Seicento. Mediante l'adesione al realismo palizziano e 
+								allo "studio dal vero", portò la rivolta antiaccademica nel seno stesso dell'Accademia, senza tuttavia 
+								riuscire a vincere la resistenza (e qui è l'intima contraddizione della sua polemica) per ogni 
+								soggetto sprovvisto di preventiva dignità poetica, extrapittorica. Il tono della sua arte, tipicamente 
+								romantico, fu caratterizzato dall'interesse psicologico e letterario del soggetto e dalla ricerca di 
+								effetti drammatici, talvolta teatrali. Raffinato colorista, erede della migliore tradizione napoletana, 
+								nel 1855 viaggiò in Germania, Paesi Bassi, Belgio, Inghilterra e Francia. M. ammirò J.-L.-E. 
+								Meissonnier, J.-L. Gérôme, E. Delacroix e M. Fortuny; nella pittura frantumata e vivida di 
+								quest'ultimo, trovò rispondenza quando, nel periodo più tardo, andava rinunciando all'istintiva 
+								consistenza formale per realizzare una pittura di "macchia". Il viaggio all'estero lo pose in contatto 
+								con moderne correnti di idee, che influenzarono durevolmente il suo lavoro. Le opere principali di 
+								M. sono nella Galleria Nazionale d'arte moderna e contemporanea a Roma.</p>
+						</note>
+					</person>
+					
+					<person xml:id="filippoPalizzi">
+						<persName type="real" role="painter">
+							<ref target="https://www.wikidata.org/wiki/Q1055843"/>
+							<forename>Filippo</forename>
+							<surname>Palizzi</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1818-06-16">16 giugno 1818</date>
+							<placeName ref="TEI-ListPlace.xml#CH">
+								<settlement type="municipality">Vasto</settlement>
+								<settlement type="provincia" key="CH">Chieti</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1899-09-11">11 settembre 1899</date>
+							<placeName ref="TEI-ListPlace.xml#NA">Napoli</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/filippo-palizzi/" resp="DG">
+							<p>Pittore (Vasto 1818 - Napoli 1899). Rinnovatore della 
+								pittura napoletana ottocentesca, P. abbandonò lo 
+								stile accademico per dedicarsi allo studio del vero, 
+								soprattutto di paesaggi e di animali, in sintonia con 
+								le contemporanee esperienze francesi, orientando la 
+								sua pittura verso un realismo di intima intonazione 
+								poetica.</p>
+						</note>
+					</person>
+
+					<person xml:id="ilMilanese">
+						<persName type="real" role="author">
+							<addName type="pseudonym">Il Milanese</addName>
+						</persName>
+						<sex>M</sex>
+						<note resp="#DG">
+							<p>Pseudonimo dell'autore dell'articolo sull'Esposizione di Napoli.</p>
+						</note>
+					</person>
+					
+					<person xml:id="ioFarfalla">
+						<persName type="real" role="author">
+							<addName type="pseudonym">Io FARFALLA</addName>
+						</persName>
+						<note resp="#DG">
+							<p>Pseudonimo utilizzato dal direttore della rivista La Farfalla in risposta al Milanese nella nota 1.</p>
+						</note>
+					</person>
+					
+					<person xml:id="adolfoBartoli">
+						<persName type="real" role="critc">
+							<ref target="https://www.wikidata.org/wiki/Q364999"/>
+							<forename>Adolfo</forename>
+							<surname>Bartoli</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1833-11-19">19 novembre 1833</date>
+							<placeName ref="TEI-ListPlace.xml#MS">
+								<settlement type="municipality">Fivizzano</settlement>
+								<settlement type="provincia" key="MS">Massa</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1894-05-16">16 maggio 1894</date>
+							<placeName ref="TEI-ListPlace.xml#GE">Genova</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/adolfo-bartoli_(Dizionario-Biografico)/" resp="DG">
+							<p>Nato a Fivizzano (Massa) il 19 nov. 1833, seguì per desiderio del padre i corsi di giurisprudenza 
+								presso l'università di Siena, dove conseguì la laurea nel novembre 1855. Già allora, però, le sue 
+								inclinazioni lo portavano a coltivare gli studi storici della letteratura italiana, per cui, quasi per svago, 
+								cominciò a trascrivere le lettere del beato G. Colombini, che giacevano manoscritte in una 
+								biblioteca di Siena. Le pubblicò nel 1856 a Lucca, dove s'era trasferito a far pratica nello 
+								studio di un avvocato. Tale edizione gli valse d'esser chiamato a Firenze da G. B. Vieusseux, come segretario e 
+								collaboratore dell'Archivio storico italiano. Da quel momento la vita del B. fu tutta dedicata allo 
+								studio e all'insegnamento. Nel 1859 entrò nelle scuole medie come docente d'italiano; nel 1869 fu 
+								all'Istituto superiore di commercio di Venezia; infine, nel 1874, ottenne la cattedra di letteratura 
+								italiana nell'Istituto di studi superiori di Firenze, dove rimase per vent'anni, svolgendo un'efficace 
+								azione culturale attraverso iniziative e ricerche d'ogni genere. Morì a Genova il 16 maggio 1894.</p>
+						</note>
+					</person>
+					
+					<person xml:id="antonioCesari">
+						<persName type="real" role="critic">
+							<ref target="https://www.wikidata.org/wiki/Q601506"/>
+							<forename>Antonio</forename>
+							<surname>Cesari</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1760-01-17">17 gennaio 1760</date>
+							<placeName ref="TEI-ListPlace.xml#VR">Verona</placeName>
+						</birth>
+						<death>
+							<date when="1828-10-01">1 ottobre 1828</date>
+							<placeName ref="TEI-ListPlace.xml#RA">Ravenna</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/antonio-cesari/" resp="DG">
+							<p>Letterato (Verona 1760 - Ravenna 1828). Sacerdote, dedicò la sua vita agli studi letterarî 
+								e all'esercizio esemplare del suo ministero. Ebbe fama e autorità come capo dei "puristi", 
+								come, cioè, il più attivo e convinto propugnatore del ritorno alla lingua del Trecento (non 
+								esclusi riboboli, arcaismi, ecc.), in opposizione alla "corruzione" della lingua per l'influsso 
+								della cultura straniera. Tra il 1800 e il 1811 ripubblicò a Venezia il Dizionario della Crusca 
+								aggiungendovi parecchie migliaia di voci tolte da antichi testi. E la sua dottrina, esposta in 
+								parecchi scritti (Dissertazione sullo stato presente della lingua italiana, 1810; Le Grazie, 
+								dialoghi, 1813, ecc.), applicò in tutte le sue innumerevoli opere, dalle rime alle traduzioni 
+								(Imitazione di Cristo, 1785, Fatti degli Apostoli, 1821; da classici latini, ecc.), dalle Novelle 
+								ai dialoghi (Bellezze della Commedia di Dante Alighieri. Dialoghi d'Antonio Cesari, 4 voll., 1824-26), 
+								prolisso commento continuo, non privo però di acute e fini osservazioni. Combatterono l'esagerazione 
+								della sua teoria V. Monti, G. Perticari, il p. F. Villardi.</p>
+						</note>
+					</person>
+					
+					<person xml:id="annibaleCaro">
+						<persName type="real" role="poet">
+							<ref target="https://www.wikidata.org/wiki/Q566851"/>
+							<forename>Annibale</forename>
+							<surname>Caro</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1507-06-06">6 giugno 1507</date>
+							<placeName ref="TEI-ListPlace.xml#MC">
+								<settlement type="municipality">Civitanova Marche</settlement>
+								<settlement type="provincia" key="MC">Macerata</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1566-11-07">17 novembre 1566</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Roma</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/annibale-caro/" resp="DG">
+							<p>Letterato (Civitanova Marche 1507 - Roma 1566). Dapprima precettore a Firenze (1525-29), 
+								dove frequentò B. Varchi, fu poi (1529-43) segretario di monsignor Giovanni Gaddi a Roma, dove 
+								ebbe priorato, badia, benefici e prebende. Alla morte del Gaddi divenne primo segretario di Pier 
+								Luigi Farnese, e quando questi ricevette il ducato di Parma e Piacenza, fu messo a capo dell'amministrazione 
+								della giustizia; si salvò a stento quando il duca fu ucciso (1547). Fu poi a Roma alla corte del 
+								cardinale Alessandro Farnese (1548-63). Una canzone in lode della casa reale di Francia, da lui scritta 
+								per incarico del cardinale, Venite all'ombra dei gran gigli d'oro, censurata da L. Castelvetro, diede 
+								luogo a una famosissima polemica: il C. vi partecipò con un'Apologia (1558), violento sfogo di collera 
+								accompagnato da maligne insinuazioni, sebbene in fatto di lingua e di arte non vi manchino idee buone e 
+								arguzia. Alla prosa aggiunse rime ingiuriose, i Mattaccini, dal nome di certi giocolieri, e una Corona 
+								di nove sonetti, nei quali ripeteva contro il suo censore l'accusa di eresia e di aver fatto uccidere a 
+								tradimento un giovane letterato, Alberico Longo, suo partigiano: il Castelvetro fu condannato a morte in 
+								contumacia. Ritiratosi nel '63 in una sua terra presso Frascati, il C. cominciò la traduzione in sciolti 
+								dell'Eneide, il suo capolavoro. Pregevolissime anche le numerose Lettere e notevole, per la novità dell'invenzione, 
+								la commedia in prosa Gli straccioni (1544). Lasciò anche Rime petrarcheggianti e la traduzione della Retorica di Aristotele 
+								e degli Amori pastorali di Dafni e Cloe di Longo Sofista.</p>
+						</note>
+					</person>
+					
+					<person xml:id="lodovicoCastelvetro">
+						<persName type="real" role="philosopher">
+							<ref target="https://www.wikidata.org/wiki/Q936665"/>
+							<forename>Lodovico</forename>
+							<surname>Castelvetro</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1505">1505</date>
+							<placeName ref="TEI-ListPlace.xml#MO">Modena</placeName>
+						</birth>
+						<death>
+							<date when="1571-02-21">21 febbraio 1571</date>
+							<placeName ref="TEI-ListPlace.xml#SO">
+								<settlement type="municipality">Chiavenna</settlement>
+								<settlement type="provincia" key="SO">Sondrio</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/ludovico-castelvetro/" resp="DG">
+							<p>Letterato (Modena 1505 circa - Chiavenna 1571). Lettore di diritto a Modena dal 
+								1532, fu nel 1560 processato e condannato in contumacia dall'Inquisizione, forse 
+								anche per effetto delle accuse di eresia lanciategli contro da A. Caro in una famosa 
+								polemica. Vagò dal 1560 in Francia, Svizzera, Austria, accolto da Massimiliano II, 
+								cui dedicò la traduzione e il commento della Poetica di Aristotele (1570), la sua opera 
+								più importante. Ricordiamo inoltre il commento alle Rime del Petrarca, la Sposizione a 
+								XXIX canti dell'Inferno dantesco e la Giunta fatta al Ragionamento degli articoli e de' verbi 
+								di Messer Pietro Bembo (1563), dove si esamina lo svolgimento grammaticale della lingua 
+								italiana da quella latina.</p>
+						</note>
+					</person>
+					
+					<person xml:id="benedettoVarchi">
+						<persName type="real" role="writer">
+							<ref target="https://www.wikidata.org/wiki/Q176833"/>
+							<forename>Benedetto</forename>
+							<surname>Varchi</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1503-03-19">19 marzo 1503</date>
+							<placeName ref="TEI-ListPlace.xml#FI">Firenze</placeName>
+						</birth>
+						<death>
+							<date when="1565-12-18">18 dicembre 1565</date>
+							<placeName ref="TEI-ListPlace.xml#FI">Firenze</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/benedetto-varchi/" resp="DG">
+							<p>Letterato (Firenze 1503 - ivi 1565). Il V. è una delle figure tipiche del 
+								Cinquecento italiano. Fu uomo d'ingegno vivace anche se non profondo, di 
+								cultura vasta sebbene superficiale. La sua opera più importante è la Storia 
+								fiorentina, scritta per incarico del duca Cosimo I: essa va, in 16 libri, 
+								dal 1527 al 1538 (pubbl. solo nel 1721).</p>
+						</note>
+					</person>
+					
+					<person xml:id="salvatoreCorticelli">
+						<persName type="real" role="writer">
+							<ref target="https://www.wikidata.org/wiki/Q21124239"/>
+							<forename>Salvatore</forename>
+							<surname>Corticelli</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1689-12-08">8 dicembre 1689</date>
+							<placeName ref="TEI-ListPlace.xml#PC">Piacenza</placeName>
+						</birth>
+						<death>
+							<date when="1758-01-05">5 gennaio 1758</date>
+							<placeName ref="TEI-ListPlace.xml#BO">Bologna</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/salvatore-corticelli/" resp="DG">
+							<p>Letterato (Piacenza 1689 - Bologna 1758). Barnabita, scrisse di teologia e di morale; più noto 
+								per una fortunata grammatica empirica, Regole ed osservazioni della lingua toscana (1745), 
+								e per Della toscana eloquenza (1752).</p>
+						</note>
+					</person>
+					
+					<person xml:id="prosperoViani">
+						<persName type="real" role="writer">
+							<ref target="https://www.wikidata.org/wiki/Q19357965"/>
+							<forename>Prospero</forename>
+							<surname>Viani</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1812-04-13">13 aprile 1812</date>
+							<placeName ref="TEI-ListPlace.xml#RE">Reggio Emilia</placeName>
+						</birth>
+						<death>
+							<date when="1892-09-12">12 settembre 1892</date>
+							<placeName ref="TEI-ListPlace.xml#RE">Reggio Emilia</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/prospero-viani/" resp="DG">
+							<p>Letterato (Reggio nell'Emilia 1812 - Firenze 1892). Dopo una carriera nell'istituzione scolastica, 
+								fu bibliotecario della Riccardiana di Firenze e accademico della Crusca. Classicista e purista, 
+								pubblicò, tra l'altro, un Dizionario di pretesi francesismi ecc. (2 voll., 1858-60) e Lettere 
+								filologiche e critiche (1880). Curò anche la pubblicazione dell'epistolario e di altri scritti inediti 
+								di G. Leopardi.</p>
+						</note>
+					</person>
+					
+					<person xml:id="alfonsoCerquetti">
+						<persName type="real" role="philologist">
+							<ref target="https://www.wikidata.org/wiki/Q63293437"/>
+							<forename>Alfonso</forename>
+							<surname>Cerquetti</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1830-03-15">15 marzo 1830</date>
+							<placeName ref="TEI-ListPlace.xml#MC">
+								<settlement type="municipality">Montecosaro</settlement>
+								<settlement type="provincia" key="MC">Macerata</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1905-02-18">18 febbraio 1905</date>
+							<placeName ref="TEI-ListPlace.xml#AN">
+								<settlement type="municipality">Osimo</settlement>
+								<settlement type="provincia" key="AN">Ancona</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/alfonso-cerquetti_(Dizionario-Biografico)/" resp="DG">
+							<p>Nacque a Montecosaro, presso Macerata, da Giovanni, possidente, e da Creusa Pasquali; C. 
+								Romiti (A. C.,p. 51)desume da un documento parrocchiale la data di nascita, 19 dic. 1827, 
+								ma aggiunge che gli atti del municipio di Osimo, l'epigrafe tombale e i cenni biografici 
+								pubblicati quando egli era ancora in vita sono concordi nell'indicare il 15 marzo 1830. Studiò 
+								lettere italiane e latine sotto la guida di Crescentino Giannini, e successivamente seguì corsi 
+								di filosofia a Morrovalle, presso il convento dei cappuccini, poi, dal 1848, di giurisprudenza a 
+								Macerata; ma nel 1850 dovette interrompere gli studi regolari in seguito a "una punizione 
+								inflittagli per motivi politici, e per un fatto che egli non aveva commesso, ma di cui non volle 
+								discolparsi per non compromettere chi ne era stato veramente l'autore" (ibid., p. 52: C. Romiti 
+								costituisce l'unica fonte, alquanto reticente, sul periodo 1848-60).</p>
+						</note>
+					</person>
+					
+					<person xml:id="antonioDeNino">
+						<persName type="real" role="historian">
+							<ref target="https://www.wikidata.org/wiki/Q3619507"/>
+							<forename>Antonio</forename>
+							<surname>De Nino</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1833-06-15">15 giugno 1833</date>
+							<placeName ref="TEI-ListPlace.xml#AQ">
+								<settlement type="municipality">Pratola Peligna</settlement>
+								<settlement type="provincia" key="AQ">L'Aquila</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1907-03-01">1 marzo 1907</date>
+							<placeName ref="TEI-ListPlace.xml#AQ">
+								<settlement type="municipality">Sulmona</settlement>
+								<settlement type="provincia" key="AQ">L'Aquila</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/antonio-de-nino/" resp="DG">
+							<p>Studioso di archeologia e folclore abruzzese (Pratola Peligna 1836 - Sulmona 1907); condusse 
+								ricerche archeologiche ad Aufidena e Corfinio. Opere principali: Usi e costumi abruzzesi (6 
+								voll., 1879-97); Proverbi abruzzesi (1877); Ovidio nella tradizione popolare di Sulmona (1886); Il 
+								Messia dell'Abruzzo (1890). D'Annunzio, che gli era amico, trasse dalle sue opere molti temi 
+								relativi all'ambiente e ai costumi dell'Abruzzo.</p>
+						</note>
+					</person>
+					
+					<person xml:id="cieloDAlcamo">
+						<persName type="real" role="poet">
+							<ref target="https://www.wikidata.org/wiki/Q2245720"/>
+							<forename>Cielo</forename>
+							<surname>D'Alcamo</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1200">1200</date>
+							<placeName ref="TEI-ListPlace.xml#TP">
+								<settlement type="municipality">Alcamo</settlement>
+								<settlement type="provincia" key="TP">Trapani</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1200">1200</date>
+							<placeName ref="TEI-ListPlace.xml#TP">
+								<settlement type="municipality">Alcamo</settlement>
+								<settlement type="provincia" key="TP">Trapani</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/cielo-d-alcamo/" resp="DG">
+							<p>Ignoto poeta, cui è attribuito il contrasto in 160 settenarî Rosa fresca aulentissima 
+								(composto tra il 1231 e il 1250), dialogo realistico, sicuramente un mimo, tra l'amante 
+								che incalza e la donna, che, prima sdegnosa, finisce col cedere. Il nome appare solo negli 
+								indici apposti dal cinquecentista A. Colocci al cod. Vaticano 3793, che unico conserva il 
+								contrasto. Cielo è probabile travestimento toscano di Celi (ant. sic. Miceli "Michele"); 
+								l'ipotesi Ciullo è ormai scartata. Non si sa neppure con certezza se sia da leggere "d'Alcamo" 
+								o "dal Camo", comunque pare certo che l'autore fosse siciliano; e siciliana è da considerarsi 
+								la lingua del contrasto che Dante stesso, nel De vulgari eloquentia (I, XII, 6), cita come esempio 
+								di siciliano, ma non di siciliano illustre, bensì "secundum quod prodit a terrigenis mediocribus", 
+								cioè un siciliano che, come è stato giustamente osservato, appare caratterizzato da "quell'espressionismo 
+								vernacolare che durerà fino all'età barocca".</p>
+						</note>
+					</person>
+					
+					<person xml:id="guittoneDArezzo">
+						<persName type="real" role="poet">
+							<ref target="https://www.wikidata.org/wiki/Q1246333"/>
+							<forename>Guittone</forename>
+							<surname>D'Arezzo</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1235">1235</date>
+							<placeName ref="TEI-ListPlace.xml#AR">Arezzo</placeName>
+						</birth>
+						<death>
+							<date when="1294">1294</date>
+							<placeName ref="TEI-ListPlace.xml#FI">Firenze</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/guittone-d-arezzo/" resp="DG">
+							<p>Poeta (n. intorno al 1235 - m. Firenze 1294), figlio di Viva di Michele. Intorno al 1265 
+								entrò nei "Milites Beatae Virginis Mariae" (i cosiddetti frati gaudenti), opponendosi alla 
+								mondanità di essi. È la figura più rappresentativa del momento di trapasso tra la poesia 
+								siciliana provenzaleggiante e lo stil novo iniziato da G. Guinizzelli, e anzi il caposcuola 
+								della generazione anteriore a Dante nell'ambito della quale esercitò una vera e propria dittatura 
+								letteraria. Contro questa infatti si appuntò l'intransigente polemica di Dante e degli stilnovisti, 
+								polemica che, come è stato osservato, è essa stessa segno di ammirazione e rispetto. Faticoso e oscuro 
+								nello stile, non riuscì mai a liberarsi dalla maniera provenzale; meglio che nelle rime giovanili 
+								d'amore, riuscì in quelle ispirate a sentimenti di carità patria e di vita morale, in cui si espande una 
+								robusta vena oratoria (la sua produzione poetica assomma a cinquanta canzoni e duecentocinquanta sonetti). 
+								Nelle elaboratissime Lettere, in prosa volgare, ha rilievo la sua forte personalità morale e civile; 
+								ma tali lettere sono importanti soprattutto perché il volgare prosastico vi è adoperato per la prima volta 
+								con ambiziosi intenti d'arte. Ipotesi recenti fanno di G. l'inventore della ballata sacra, cioè della lauda.</p>
+						</note>
+					</person>
+					
+					<person xml:id="ferdinandoPetruccelliDellaGattina">
+						<persName type="real" role="journalist">
+							<ref target="https://www.wikidata.org/wiki/Q93862"/>
+							<forename>Ferdinando</forename>
+							<surname>Petruccelli della Gattina</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1815-08-28">28 agosto 1815</date>
+							<placeName ref="TEI-ListPlace.xml#PZ">
+								<settlement type="municipality">Moliterno</settlement>
+								<settlement type="provincia" key="PZ">Potenza</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1890-03-29">29 marzo 1890</date>
+							<placeName ref="TEI-ListPlace.xml#Parigi">Parigi</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/petruccelli-della-gattina-ferdinando/" resp="DG">
+							<p>Scrittore e uomo politico (Moliterno 1815 - Parigi 1890); proclamata la Costituzione 
+								(1848) a Napoli, fu uno dei direttori del Mondo vecchio e mondo nuovo, e deputato. 
+								Costretto all'esilio, visse a Genova, ove pubblicò La rivoluzione di Napoli del 1848 
+								(1850), a Parigi, che dovette lasciare per aver combattuto sulle barricate durante il 
+								colpo di stato bonapartista del 2 dicembre, e a Londra. Ritornato in Italia (1860), 
+								fu deputato (1861-65; 1874-82). Autore di opere storiche e memorialistiche (I moribondi 
+								del palazzo Carignano, 1862; Pio IX, 1866; Il Concilio, 1869; Storia d'Italia dal 1866 al 
+								1880, 1881), fu anche fecondo romanziere: Malina di Taranto (1843); Memorie di Giuda (1870); 
+								I pinzoccheri (2 voll., post., 1892).</p>
+						</note>
+					</person>
+					
+					<person xml:id="giovanniSiottoPintor">
+						<persName type="real" role="politician">
+							<ref target="https://www.wikidata.org/wiki/Q3768148"/>
+							<forename>Giovanni</forename>
+							<surname>Siotto-Pintor</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1805-11-29">29 novembre 1805</date>
+							<placeName ref="TEI-ListPlace.xml#CA">Cagliari</placeName>
+						</birth>
+						<death>
+							<date when="1882-01-24">24 gennaio 1882</date>
+							<placeName ref="TEI-ListPlace.xml#TO">Torino</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giovanni-siotto-pintor/" resp="DG">
+							<p>Magistrato, uomo politico e storico (Cagliari 1805 - Torino 1882). Deputato (1848-53), 
+								militò nelle file dell'opposizione democratica; senatore dal 1861, fu poi presidente 
+								di sezione della Cassazione. Tra i suoi scritti si ricorda in particolare la Storia 
+								civile dei popoli sardi dal 1798 al 1848 (1877).</p>
+						</note>
+					</person>
+					
+					<person xml:id="marcoMastrofini">
+						<persName type="real" role="mathematician">
+							<ref target="https://www.wikidata.org/wiki/Q3846271"/>
+							<forename>Marco</forename>
+							<surname>Mastrofini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1763-04-25">25 aprile 1763</date>
+							<placeName ref="TEI-ListPlace.xml#RM">
+								<settlement type="municipality">Monte Compatri</settlement>
+								<settlement type="provincia" key="RM">Roma</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1845-03-03">3 marzo 1845</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Roma</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/marco-mastrofini/" resp="DG">
+							<p>Abate e poligrafo (Montecompatri 1763 - Roma 1843). Si occupò di filosofia, 
+								teologia, filologia; è noto soprattutto per il volume su Le usure (1831), 
+								in cui asserì l'ammissibilità dal punto di vista teologico di un moderato 
+								interesse, dando luogo a numerose discussioni, e per il Dizionario critico 
+								de' verbi italiani conjugati (2 voll., 1814).</p>
+						</note>
+					</person>
+					
+					<person xml:id="luigiAmedeoBianchi">
+						<persName type="real" role="mathematician">
+							<ref target="https://www.wikidata.org/wiki/Q102416159"/>
+							<forename>Luigi</forename>
+							<forename>Amedeo</forename>
+							<surname>Bianchi</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1856">1856</date>
+							<placeName ref="TEI-ListPlace.xml#PR">Parma</placeName>
+						</birth>
+						<death>
+							<date when="1928">1928</date>
+							<placeName ref="TEI-ListPlace.xml#PI">Pisa</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/luigi-bianchi/" resp="DG">
+							<p>Matematico italiano (Parma 1856 - Pisa 1928); allievo, alla Scuola Normale di Pisa, di E. Betti e U. Dini; 
+								dal 1881 professore alla stessa scuola (che poi diresse dal 1918 alla morte) e dal 1886 anche nell'università 
+								di Pisa. Socio naz. dei Lincei (1893); senatore. Tra i maggiori matematici italiani, ha segnato orme profonde 
+								nella geometria differenziale; classiche, in particolare, la sua trasformazione delle superfici a curvatura 
+								costante e la sua teoria generale delle trasformazioni delle superfici applicabili sulle quadriche. Contributi 
+								originali ha anche portato alla teoria dei numeri algebrici. Grande importanza, nello sviluppo della matematica 
+								in Italia, ha avuto la sua opera di maestro e di trattatista (Lezioni sulla teoria dei gruppi di sostituzione e 
+								delle equazioni algebriche secondo Galois, 1897; Lezioni sulla teoria delle funzioni di variabile complessa e 
+								delle funzioni ellittiche, 1899; Lezioni di geometria differenziale, 1886, 2a ed. in 2 voll., 1922-23; Lezioni 
+								sulla teoria dei numeri algebrici, 1921).</p>
+						</note>
+					</person>
+					
+					<person xml:id="giovanniGherardini">
+						<persName type="real" role="mathematician">
+							<ref target="https://www.wikidata.org/wiki/Q3767354"/>
+							<forename>Giovanni</forename>
+							<surname>Gherardini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1778-05-27">27 maggio 1778</date>
+							<placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>
+						</birth>
+						<death>
+							<date when="1861-01-08">8 gennaio 1861</date>
+							<placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giovanni-gherardini/" resp="DG">
+							<p>Erudito (Milano 1778 - ivi 1861); laureato in medicina, si consacrò alle lettere; felice traduttore 
+								dal tedesco e librettista fecondo (La gazza ladra, per Rossini, 1817), il suo nome è legato soprattutto 
+								a un'acuta e vasta produzione filologico-lessicale (Voci e maniere di dire italiane additate ai futuri 
+								vocabolaristi, 1838-40; Lessigrafia italiana, 1843; Supplimento ai vocabolari italiani, 1852-57). Assai 
+								aperto alle rinnovatrici idee romantiche, Gh. combatté aspramente il purismo linguistico e, partecipando 
+								vivacemente all'attività lessicografica del periodo napoleonico e degli anni seguenti, difese i linguaggi 
+								tecnici, sostenne l'introduzione di voci tecniche moderne, anche se di origine dialettale, sottolineando 
+								la necessità di "ridare cittadinanza a vocaboli fuorusciti a causa della superstizione letteraria".</p>
+						</note>
+					</person>
+					
+					<person xml:id="danteAlighieri">
+						<persName type="real" role="poet">
+							<ref target="https://www.wikidata.org/wiki/Q1067"/>
+							<forename>Dante</forename>
+							<surname>Alighieri</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1265-05-30">30 maggio 1265</date>
+							<placeName ref="TEI-ListPlace.xml#FI">Firenze</placeName>
+						</birth>
+						<death>
+							<date when="1321-09-14">14 settembre 1321</date>
+							<placeName ref="TEI-ListPlace.xml#RA">Ravenna</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/dante-alighieri/" resp="DG">
+							<p>Poeta (Firenze, tra il maggio e il giugno 1265 - Ravenna, notte dal 13 al 14 settembre 1321). 
+								Della madre, che dovette morire presto, non sappiamo che il nome, Bella; il padre, Alighiero di B
+								ellincione di Alighiero, morto intorno al 1283, apparteneva a una famiglia di piccola nobiltà cittadina 
+								(il trisavolo di D., Cacciaguida, fatto cavaliere da Corrado III, morì nella 2a crociata, 1147), ma 
+								ai suoi tempi decaduta: egli faceva forse il prestatore, o comunque si occupava di affari. Tuttavia 
+								Dante (il nome è forma accorciata, familiare, di Durante) condusse da giovane vita da gentiluomo, e 
+								come tale militò nella cavalleria (battaglia di Campaldino, 1289). Aveva studiato grammatica e filosofia 
+								probabilmente presso i francescani di S. Croce, retorica forse con Brunetto Latini e a Bologna, dove in 
+								ogni modo si trovava nel 1287 o poco prima. Cominciò a poetare ben presto; ai suoi 18 anni risale, secondo 
+								il suo racconto, il primo sonetto databile che di lui ci rimanga, in onore di Beatrice.</p>
+						</note>
+					</person>
+					
+					<person xml:id="giuseppeGiusti">
+						<persName type="real" role="poet">
+							<ref target="https://www.wikidata.org/wiki/Q982512"/>
+							<forename>Giuseppe</forename>
+							<surname>Giusti</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1809-05-13">13 maggio 1809</date>
+							<placeName ref="TEI-ListPlace.xml#PT">
+								<settlement type="municipality">Monsummano Terme</settlement>
+								<settlement type="provincia" key="PT">Pistoia</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1850-03-31">31 marzo 1850</date>
+							<placeName ref="TEI-ListPlace.xml#FI">Firenze</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giuseppe-giusti/" resp="DG">
+							<p>Poeta italiano (Monsummano 1809 - Firenze 1850). Partito dalla tradizione giocosa toscana, approdò 
+								al mito della “paesanità”, come aspirazione a una vita lontana dalle raffinatezze sociali e insieme 
+								romantico disprezzo per un gusto troppo letterario. La fama dello scrittore resta affidata agli “Scherzi”, 
+								satire originalissime di tutte le sventure della vita italiana nel decennio anteriore al 1849, per i quali 
+								spicca nella storia letteraria italiana del sec. XIX con un'impronta ben definita di originalità. Celebre, 
+								tra i suoi versi, Sant'Ambrogio (1845), in cui il tono meditativo si lega a temi patriottici.</p>
+						</note>
+					</person>
+					
+					<person xml:id="gianDomenicoRomagnosi">
+						<persName type="real" role="philosopher">
+							<ref target="https://www.wikidata.org/wiki/Q722677"/>
+							<forename>Gian Domenico</forename>
+							<surname>Romagnosi</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1761-12-13">11 dicembre 1761</date>
+							<placeName ref="TEI-ListPlace.xml#PR">
+								<settlement type="municipality">Salsomaggiore Terme</settlement>
+								<settlement type="provincia" key="PR">Parma</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1835-06-08">8 giugno 1835</date>
+							<placeName ref="TEI-ListPlace.xml#MI">Milano</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/gian-domenico-romagnosi/" resp="DG">
+							<p>Giurista e filosofo (Salsomaggiore 1761 - Milano 1835). Di formazione illuministica, R. fu un fautore 
+								dell'unità italiana, idea che gli costò varie traversie (tra cui, a partire dal 1821, il divieto di insegnare). 
+								Come giurista è considerato uno dei fondatori del diritto penale moderno (Genesi del diritto penale, 1791). Come 
+								filosofo fu un convinto assertore della 'filosofia civile', ossia di una riflessione che studia l'uomo nella sua 
+								concreta evoluzione storico-sociale, unendo la dimensione morale a quella giuridico-politica ed economica. A tale 
+								impostazione si rifece il suo allievo C. Cattaneo.</p>
+						</note>
+					</person>
+					
+					<person xml:id="pietroFanfani">
+						<persName type="real" role="philologist">
+							<ref target="https://www.wikidata.org/wiki/Q338850"/>
+							<forename>Pietro</forename>
+							<surname>Fanfani</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1815-03-21">21 marzo 1815</date>
+							<placeName ref="TEI-ListPlace.xml#PT">
+								<settlement type="municipality">Montale</settlement>
+								<settlement type="provincia" key="PT">Pistoia</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1879-03-04">4 marzo 1879</date>
+							<placeName ref="TEI-ListPlace.xml#FI">Firenze</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/pietro-fanfani/" resp="DG">
+							<p>Filologo (Collesalvetti 1815 - Firenze 1879); dal 1859, bibliotecario della Marucelliana. 
+								Editore di testi antichi, autore di studî di lingua e di libri educativi, polemista in difesa 
+								della tradizione linguistica quale egli puristicamente la concepiva; e soprattutto, lessicografo 
+								(Vocabolario della lingua italiana, 1855; Vocabolario dell'uso toscano, 1863; Vocabolario della 
+								pronunzia toscana, 1863; Vocabolario italiano, in collab. con G. Rigutini, 1875; Lessico dell'infima 
+								e corrotta italianità, in collab. con C. Arlia, 1877; ecc.).</p>
+						</note>
+					</person>
+					
+					<person xml:id="marcantonioParenti">
+						<persName type="real" role="philologist">
+							<ref target="https://www.wikidata.org/wiki/Q60515650"/>
+							<forename>Marc'Antonio</forename>
+							<surname>Parenti</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1788">1788</date>
+							<placeName ref="TEI-ListPlace.xml#MO">
+								<settlement type="municipality">Montecuccolo</settlement>
+								<settlement type="provincia" key="MO">Modena</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1862">1862</date>
+							<placeName ref="TEI-ListPlace.xml#MO">Modena</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/marcantonio-parenti/" resp="DG">
+							<p>Letterato (Montecuccolo 1788 - Modena 1862); ebbe cariche politiche nella sua città, 
+								ma dedicò la vita agli studî filologici, con intenti puristici. Collaborò alle Memorie 
+								di religione e di morale e di letteratura, organo conservatore, e fu direttore del periodico 
+								modenese La Voce della verità. Scrisse Annotazioni al Vocabolario della Crusca e notevoli 
+								Esercitazioni filologiche.</p>
+						</note>
+					</person>
+					
+					<person xml:id="giuseppeTigri">
+						<persName type="real" role="writer">
+							<ref target="https://www.wikidata.org/wiki/Q3771519"/>
+							<forename>Giuseppe</forename>
+							<surname>Tigri</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1806-12-22">22 dicembre 1806</date>
+							<placeName ref="TEI-ListPlace.xml#PT">Pistoia</placeName>
+						</birth>
+						<death>
+							<date when="1882-03-09">9 marzo 1882</date>
+							<placeName ref="TEI-ListPlace.xml#PT">Pistoia</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giuseppe-tigri/" resp="DG">
+							<p>Letterato (Pistoia 1806 - ivi 1882); sacerdote, insegnante, provveditore agli studî, dedicò 
+								alcune monografie a Pistoia; è autore di un racconto storico (Selvaggia de' Vergiolesi, 1870) 
+								e di un poemetto didascalico (Le selve della montagna pistoiese, 1844). Assai utile la sua raccolta 
+								di Canti popolari toscani (1a ed. 1856). Finissimo per lo studio dei personaggi e per il gusto della 
+								lingua è il breve romanzo Il montanino toscano alla guerra del 1859 (1860), che trova continuazione 
+								nel racconto Da volontario a soldato nell'esercito italiano (1872).</p>
+						</note>
+					</person>
+					
+					<person xml:id="niccoloTommaseo">
+						<persName type="real" role="linguist">
+							<ref target="https://www.wikidata.org/wiki/Q558177"/>
+							<forename>Niccolò</forename>
+							<surname>Tommaseo</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1802-10-09">9 ottobre 1802</date>
+							<placeName ref="TEI-ListPlace.xml#Sibenik">Sibenik</placeName>
+						</birth>
+						<death>
+							<date when="1874-05-01">1 maggio 1874</date>
+							<placeName ref="TEI-ListPlace.xml#FI">Firenze</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/niccolo-tommaseo/" resp="DG">
+							<p>Scrittore (Sebenico 1802 - Firenze 1874). Nato in una famiglia di commercianti italiani, compiuti i 
+								primi studî nel seminario di Spalato, nel 1817 si trasferì per gli studî di legge a Padova, dove conobbe 
+								A. Rosmini. Nell'ambiente padovano, dopo il conseguimento della laurea (1822) e un breve soggiorno a 
+								Sebenico, iniziò la sua carriera di scrittore e pubblicista; si trasferì poi a Milano (1824-27), dove 
+								lavorò per l'editore Stella, si legò di devota amicizia ad A. Manzoni (si vedano i Colloqui col Manzoni, 
+								post., 1928) e cominciò a collaborare all'Antologia (v.) di G. P. Vieusseux; quindi a Firenze, dove intensificò 
+								tale collaborazione, strinse amicizia con G. Capponi ed ebbe una sofferta relazione amorosa con Geppina Catelli.</p>
+						</note>
+					</person>
+					
+					<person xml:id="appianoBuonafede">
+						<persName type="real" role="writer">
+							<ref target="https://www.wikidata.org/wiki/Q621023"/>
+							<forename>Appiano</forename>
+							<surname>Buonafede</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1716-01-04">4 gennaio 1716</date>
+							<placeName ref="TEI-ListPlace.xml#FE">
+								<settlement type="municipality">Comacchio</settlement>
+								<settlement type="provincia" key="MO">Ferrara</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1793-12-17">17 dicembre 1793</date>
+							<placeName ref="TEI-ListPlace.xml#RM">Roma</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/appiano-buonafede/" resp="DG">
+							<p>Letterato (Comacchio 1716 - Roma 1793). Cambiò in Appiano il suo nome (Tito Benvenuto), 
+								entrando (1734) tra i celestini, dei quali fu procuratore generale e (1777) generale.</p>
+						</note>
+					</person>
+					
+					<person xml:id="giovanniGalvani">
+						<persName type="real" role="writer">
+							<ref target="https://www.wikidata.org/wiki/Q20860615"/>
+							<forename>Giovanni</forename>
+							<surname>Galvani</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1806-06-24">24 giugno 1806</date>
+							<placeName ref="TEI-ListPlace.xml#MO">Modena</placeName>
+						</birth>
+						<death>
+							<date when="1873-04-19">19 aprile 1873</date>
+							<placeName ref="TEI-ListPlace.xml#MO">Modena</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/giovanni-galvani_(Dizionario-Biografico)/" resp="DG">
+							<p>Nacque a Modena il 24 giugno 1806, figlio secondogenito di Giuseppe e Giuseppina Conti. Precocissimo, 
+								ancora fanciullo studiò la geometria, la retorica e la fisica, completando a dodici anni il corso di 
+								filosofia. Successivamente, dopo l'incontro con C. Cavedoni, cultore della lirica provenzale, indirizzò 
+								i propri interessi verso la filologia dedicandosi allo studio della poesia provenzale duecentesca su un 
+								codice provenzale della Biblioteca Estense di Modena (poi descritto da A. Mussafia). Si recò poi a Bologna 
+								per seguire all'Università le lezioni di F. Schiassi e G.G. Mezzofanti e ne approfittò per rintracciare 
+								nella Biblioteca dell'Archiginnasio un codice di poeti modenesi.</p>
+						</note>
+					</person>
+					
+					<person xml:id="laurenceSterne">
+						<persName type="real" role="writer">
+							<ref target="https://www.wikidata.org/wiki/Q20860615"/>
+							<forename>Laurence</forename>
+							<surname>Sterne</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1713-11-24">24 novembre 1713</date>
+							<placeName ref="TEI-ListPlace.xml#Clonmel">Clonmel</placeName>
+						</birth>
+						<death>
+							<date when="1768-03-18">18 marzo 1768</date>
+							<placeName ref="TEI-ListPlace.xml#London">Londra</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/laurence-sterne/" resp="DG">
+							<p>Scrittore inglese (Clonmel, Irlanda, 1713 - Londra 1768). Figlio di un ufficiale subalterno e d'una irlandese, 
+								si avviò alla carriera ecclesiastica; nel 1738 fu nominato vicario di Sutton-in-the-Forest, dove rimase per 
+								venti anni, e dal 1740 ebbe un posto nel capitolo di York. Sposato a Elizabeth Lumlet (1741), ebbe una vita 
+								coniugale difficile a causa dei molti idillî. Esordì nella letteratura con una satira del mondo curiale, A 
+								political romance (1759), nota anche col titolo di The history of a good warm watchcoat. Nel 1760 pubblicò 
+								i due primi volumi di The life and opinions of Tristram Shandy, gentleman, che, nonostante i duri attacchi 
+								della critica (S. Johnson, H. Walpole, S. Goldsmith) lo portarono alla celebrità.</p>
+						</note>
+					</person>
+					
+					<person xml:id="costantinoArlia">
+						<persName type="real" role="philologist">
+							<ref target="https://www.wikidata.org/wiki/Q55225148"/>
+							<forename>Costantino</forename>
+							<surname>Arlia</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1829-08-23">23 agosto 1829</date>
+							<placeName ref="TEI-ListPlace.xml#CS">
+								<settlement type="municipality">Aiello Calabro</settlement>
+								<settlement type="provincia" key="CS">Cosenza</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1768-03-18">18 marzo 1768</date>
+							<placeName ref="TEI-ListPlace.xml#London">Londra</placeName>
+						</death>
+						<note source="https://www.treccani.it/enciclopedia/laurence-sterne/" resp="DG">
+							<p>Letterato (Aiello Calabro 1829 - Firenze 1915); studioso della lingua, pubblicò con P. Fanfani il Lessico 
+								dell'infima e corretta italianità (1877; 4a ediz. 1898), a cui si riallaccia la Giunta al lessico dell'infima 
+								italianità (1884 e 1896); altre sue opere (Note filologiche, 2 voll., 1891-92; Voci e maniere di lingua viva, 
+								1895; Filologia spicciola, 1899; Passatempi filologici, 1902) hanno carattere di curiosità linguistiche.</p>
+						</note>
+					</person>
+					
+					<person xml:id="ilBibliofilo">
+						<persName type="real" role="author">
+							<addName type="pseudonym">Il Bibliofilo</addName>
+						</persName>
+						<sex>M</sex>
+						<note resp="#DG">
+							<p>Pseudonimo dell'autore della recensione sull'opera di Pietro Fanfani e Costantino Arlia.</p>
+						</note>
+					</person>
+					
+				</listPerson>
+
+				<!-- voce inserita come esempio: 
+				<listPerson>
+					<person xml:id="Bellini_Vincenzo">
+						<persName role="composer">
+							<ref
+								target="https://opac.rism.info/search?id=pe11648&amp;View=rism http://www.treccani.it/enciclopedia/vincenzo-bellini_(Dizionario-Biografico)"/>
+							<forename>Vincenzo</forename>
+							<forename>Salvatore</forename>
+							<forename>Carmelo</forename>
+							<forename>Francesco</forename>
+							<surname>Bellini</surname>
+							<addName type="epiteth">Il Cigno</addName>
+							<roleName type="honorific">Cavaliere della Legione d'onore</roleName>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1801-11-03">3 novembre 1801</date>
+							<placeName ref="TEI-ListPlace.xml#CT">
+								<settlement type="municipality">Catania</settlement>
+								<settlement type="provincia" key="CT">Catania</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="1835-09-23">23 settembre 1835</date>
+							<placeName ref="TEI-ListPlace.xml#Puteaux">
+								<settlement type="municipality">Puteaux</settlement>
+								<settlement type="département" key="Paris">Paris</settlement>
+								<country key="FR">France</country>
+							</placeName>
+						</death>
+						<note source="https://www.studibelliniani.eu/biografia" resp="DS">
+							<p> Fu il primo dei sette figli di Rosario e Agata Ferlito, e nipote di
+								Vincenzo Tobia, rinomato organista e compositore. I primi lavori
+								furono un <hi rend="italic">“Gallus cantavit”</hi> e alcune
+								composizioni sacre per organo o orchestra. Nel giugno del 1819
+								iniziò a frequentare, grazie a una borsa di studio, il Conservatorio
+								di Napoli, dove iniziò la stretta amicizia con Francesco Florimo.
+								Nel 1825, Bellini presentò l'opera semiseria <hi rend="italic"><rs
+										type="work" ref="TEI-ListWork.xml#Adelson_e_Salvini">Adelson
+										e Salvini</rs></hi>. L'anno successivo andò in scena al
+								Teatro San Carlo <hi rend="italic"><rs type="work"
+										ref="TEI-ListWork.xml#Bianca_e_Gernando">Bianca e
+										Gernando</rs></hi>. Il 27 ottobre 1827 al Teatro alla Scala
+								di Milano venne rappresentata <hi rend="italic"><rs type="work"
+										ref="TEI-ListWork.xml#Pirata">Il pirata</rs></hi>, con
+								libretto di Felice Romani. Dal 1827 al 1833 Bellini risedette
+								prevalentemente a Milano. In questi anni compose <hi rend="italic"
+										><rs type="work" ref="TEI-ListWork.xml#Straniera">La
+										straniera</rs></hi> e <hi rend="italic"><rs type="work"
+										ref="TEI-ListWork.xml#Zaira">Zaira</rs></hi>. All’inizio del
+								1830 il musicista si recò a Venezia per la prima rappresentazione de
+									<hi rend="italic"><rs type="work"
+										ref="TEI-ListWork.xml#Capuleti">I Capuleti e i
+										Montecchi</rs></hi>. Nel 1831 compose <hi rend="italic"><rs
+										type="work" ref="TEI-ListWork.xml#Sonnambula">La
+										sonnambula</rs></hi> e <hi rend="italic"><rs type="work"
+										ref="TEI-ListWork.xml#Norma">Norma</rs></hi>, rappresentate
+								a Milano. All’inizio del 1832 Bellini intraprese un lungo viaggio
+								nel Sud dell’Italia, che lo portò prima a Napoli, poi in Sicilia.
+								Nel 1833 a Venezia fu messa in scena <hi rend="italic"><rs
+										type="work" ref="TEI-ListWork.xml#Beatrice_di_Tenda"
+										>Beatrice di Tenda</rs></hi>. Alla fine di aprile del 1833
+								si trasferì a Londra, dove furono messe in scena alcune sue opere.
+								Nell’aprile 1834 Bellini ricevette un incarico dal Théâtre-Italien:
+								compose <hi rend="italic"><rs type="work"
+										ref="TEI-ListWork.xml#Puritani">I puritani</rs></hi> su
+								libretto di Carlo Pepoli, rappresentata con esito trionfale. Morì di
+								colera a Puteaux, sobborgo di Parigi. Gioacchino Rossini si occupò
+								di inviare alla famiglia i beni di Bellini, e organizzò il 2 ottobre
+								1835 una solenne cerimonia funebre agli <hi rend="italic"
+									>Invalides</hi>. Il corpo imbalsamato fu sepolto a Parigi, e nel
+								1876 fu trasferito a Catania. </p>
+						</note>
+					</person>
+					-->
+
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p>This is a template for a minimal TEI header with the mandatory components</p>
+		</body>
+	</text>
+</TEI>
